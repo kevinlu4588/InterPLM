@@ -54,10 +54,11 @@ class DashboardState:
 class ProteinFeatureVisualizer:
     def __init__(self, data_loader: DataLoader):
         self.data_loader = data_loader
-        self.dash_data_all_layer, self.protein_metadata, self.device = self._load_data()
+        self.dash_data_all_layer, self.protein_metadata, self.device = self._load_data(data_loader)
 
+    @staticmethod
     @st.cache_resource
-    def _load_data(_self, data_loader: DataLoader):
+    def _load_data(data_loader: DataLoader):
         """Load and cache the dashboard data"""
         try:
             # Load dashboard cache
