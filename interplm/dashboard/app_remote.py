@@ -51,30 +51,40 @@ class DashboardState:
     show_proteins: bool
 
 
-class ProteinFeatureVisualizer:
-    def __init__(self, data_loader: DataLoader):
-        self.data_loader = data_loader
-        self.dash_data_all_layer, self.protein_metadata, self.device = self._load_data(data_loader)
+@st.cache_resource
+def load_dashboard_data(source: str, repo_id: Optional[str], cache_dir: Optional[str], token: Optional[str]):
+    """Load and cache the dashboard data based on configuration"""
+    try:
+        # Create data loader
+        data_loader = DataLoader(
+            source=source,
+            repo_id=repo_id,
+            cache_dir=cache_dir,
+            token=token
+        )
+        
+        # Load dashboard cache
+        dash_data = data_loader.load_dashboard_cache()
+        
+        # Load protein metadata
+        protein_metadata = data_loader.load_protein_metadata()
+        
+        # Get device
+        device = get_device()
+        
+        return dash_data, protein_metadata, device, data_loader
+        
+    except Exception as e:
+        st.error(f"Error loading data: {str(e)}")
+        st.stop()
 
-    @staticmethod
-    @st.cache_resource
-    def _load_data(data_loader: DataLoader):
-        """Load and cache the dashboard data"""
-        try:
-            # Load dashboard cache
-            dash_data = data_loader.load_dashboard_cache()
-            
-            # Load protein metadata
-            protein_metadata = data_loader.load_protein_metadata()
-            
-            # Get device
-            device = get_device()
-            
-            return dash_data, protein_metadata, device
-            
-        except Exception as e:
-            st.error(f"Error loading data: {str(e)}")
-            st.stop()
+
+class ProteinFeatureVisualizer:
+    def __init__(self, data_loader: DataLoader, dash_data, protein_metadata, device):
+        self.data_loader = data_loader
+        self.dash_data_all_layer = dash_data
+        self.protein_metadata = protein_metadata
+        self.device = device
 
     def select_feature(self, layer):
         dash_data = self.dash_data_all_layer[layer]
@@ -666,8 +676,8 @@ def main():
             token=os.environ.get("HF_TOKEN"),
         )
     
-    # Create data loader
-    data_loader = DataLoader(
+    # Load data using cached function
+    dash_data, protein_metadata, device, data_loader = load_dashboard_data(
         source=config.source,
         repo_id=config.repo_id,
         cache_dir=config.cache_dir,
@@ -688,7 +698,7 @@ def main():
 
     st.title("InterPLM Feature Visualization")
 
-    visualizer = ProteinFeatureVisualizer(data_loader)
+    visualizer = ProteinFeatureVisualizer(data_loader, dash_data, protein_metadata, device)
     state = visualizer.setup_sidebar()
 
     visualizer.display_feature_statistics(state.layer, state.feature_id)
