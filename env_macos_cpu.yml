@@ -1,0 +1,47 @@
+name: interplm
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Use NumPy 1.x to avoid compatibility issues
+  - numpy<2
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - h5py
+  # CPU-only PyTorch for macOS
+  - pytorch::pytorch>=2.0,<2.2  # Avoid newest versions that may have compatibility issues
+  - pytorch::torchvision
+  - pytorch::cpuonly  # This ensures CPU-only install
+  - pip:
+    # Core packages with compatible versions
+    - transformers>=4.30,<4.40  # Avoid newest versions
+    - accelerate>=0.20,<0.25  # Compatible with older torch
+    - nnsight==0.2.21
+    - einops==0.8.0
+    - fair-esm==2.0.0
+    - huggingface-hub>=0.20
+    - wandb
+    
+    # Protein/Bio packages
+    - biopython==1.84
+    
+    # Data processing
+    - datasets
+    - multiprocess
+    - pandas
+    
+    # Visualization
+    - plotly
+    - streamlit
+    - py3dmol
+    
+    # Utilities
+    - pyyaml
+    - typed-argument-parser
+    - umap-learn
+    - python-dotenv
