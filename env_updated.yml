@@ -1,0 +1,46 @@
+name: interplm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11  # Using 3.11 for better compatibility
+  - pip=24.0
+  - numpy=1.26.4
+  - pytorch::pytorch=2.6.0
+  - pytorch::torchvision=0.21.0
+  - scipy=1.16.0
+  - scikit-learn=1.7.0
+  - matplotlib=3.10.5
+  - seaborn=0.13.2
+  - h5py=3.14.0
+  - pip:
+    # Core ML/DL packages
+    - nnsight==0.4.11
+    - transformers==4.55.2
+    - einops==0.8.1
+    - fair-esm==2.0.0
+    - huggingface-hub==0.34.4
+    - wandb==0.21.1
+    
+    # Protein/Bio packages
+    - biopython==1.84
+    
+    # Data processing
+    - datasets==2.20.0
+    - multiprocess==0.70.16
+    - pandas==2.3.2
+    
+    # Visualization
+    - plotly==6.3.0
+    - streamlit==1.48.1
+    - py3dmol==2.4.0
+    
+    # Utilities
+    - pyyaml==6.0.2
+    - typed-argument-parser==1.10.1
+    - umap-learn==0.5.6
+    
+    # Optional: for uploading to HF
+    - python-dotenv==1.0.0
