@@ -1,0 +1,36 @@
+# Requirements for macOS (CPU-only) installation
+# Install with: pip install -r requirements_macos.txt
+
+# Core dependencies with compatible versions
+numpy<2  # Must be 1.x for compatibility
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.35.0
+accelerate==0.24.0
+
+# InterPLM specific packages
+nnsight==0.2.21
+einops==0.8.0
+fair-esm==2.0.0
+huggingface-hub>=0.20.0
+biopython==1.84
+
+# Data and visualization
+datasets
+pandas
+plotly
+streamlit
+py3dmol
+matplotlib
+seaborn
+scipy
+scikit-learn
+h5py
+
+# Utilities
+pyyaml
+typed-argument-parser
+umap-learn
+python-dotenv
+wandb
+multiprocess

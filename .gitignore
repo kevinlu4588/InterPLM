@@ -19,7 +19,6 @@ data/pdbs/*
 *.ent
 *.tsv
 *.npz
-*.txt
 *.gz
 
 # Byte-compiled / optimized / DLL files

@@ -1,0 +1,134 @@
+Active site_Proton acceptor
+Active site_Proton donor
+Active site_Nucleophile
+Active site_Charge relay system
+Active site_any
+Binding site_Zn(2+)
+Binding site_GTP
+Binding site_Ca(2+)
+Binding site_substrate
+Binding site_Mg(2+)
+Binding site_a divalent metal cation
+Binding site_NADP(+)
+Binding site_ATP
+Binding site_Fe cation
+Binding site_S-adenosyl-L-methionine
+Binding site_NAD(+)
+Binding site_GDP
+Binding site_glutathione
+Binding site_NADPH
+Binding site_K(+)
+Binding site_3'-phosphoadenylyl sulfate
+Binding site_Mn(2+)
+Binding site_DNA
+Binding site_[4Fe-4S] cluster
+Binding site_Cu cation
+Binding site_a beta-D-galactoside
+Binding site_CoA
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3,4,5-trisphosphate)
+Binding site_Cu(2+)
+Binding site_heme b
+Binding site_[2Fe-2S] cluster
+Binding site_Na(+)
+Binding site_UDP-N-acetyl-alpha-D-glucosamine
+Binding site_UDP-N-acetyl-alpha-D-galactosamine
+Binding site_chitin
+Binding site_a glycoprotein
+Binding site_any
+Cofactor_Mg(2+)
+Cofactor_Zn(2+)
+Cofactor_any
+Glycosylation_N-linked (GlcNAc...) asparagine
+Glycosylation_O-linked (GalNAc...) threonine
+Glycosylation_O-linked (GlcNAc) serine
+Glycosylation_any
+Modified residue_Phosphoserine
+Modified residue_N6-acetyllysine
+Modified residue_Phosphothreonine
+Modified residue_Phosphotyrosine
+Modified residue_N6-succinyllysine
+Modified residue_N6-(2-hydroxyisobutyryl)lysine
+Modified residue_N6-lactoyllysine
+Modified residue_N-acetylalanine
+Modified residue_N6-crotonyllysine
+Modified residue_N6-glutaryllysine
+Modified residue_N-acetylmethionine
+Modified residue_N6-methyllysine
+Modified residue_N6-(beta-hydroxybutyryl)lysine
+Modified residue_Omega-N-methylarginine
+Modified residue_Citrulline
+Modified residue_Asymmetric dimethylarginine
+Modified residue_N6-butyryllysine
+Modified residue_N-acetylserine
+Modified residue_N6,N6-dimethyllysine
+Modified residue_N6,N6,N6-trimethyllysine
+Modified residue_Cysteine methyl ester
+Modified residue_Symmetric dimethylarginine
+Modified residue_ADP-ribosylserine
+Modified residue_N-acetylthreonine
+Modified residue_any
+Transit peptide_Mitochondrion
+Transit peptide_any
+Compositional bias_Basic and acidic residues
+Compositional bias_Polar residues
+Compositional bias_Low complexity
+Compositional bias_Basic residues
+Compositional bias_Acidic residues
+Compositional bias_Gly residues
+Compositional bias_Pro residues
+Compositional bias_any
+Domain_Ig-like V-type
+Domain_Ig-like C1-type
+Domain_EF-hand 1
+Domain_EF-hand 2
+Domain_Ig-like C2-type
+Domain_C-type lectin
+Domain_EF-hand 3
+Domain_any
+Region_Disordered
+Region_Connecting peptide
+Region_Alpha-2
+Region_Alpha-1
+Region_Alpha-3
+Region_any
+Zinc finger_RING-type
+Zinc finger_any
+Motif_Nuclear localization signal
+Motif_any
+Signal peptide_21
+Signal peptide_2
+Signal peptide_24
+Signal peptide_19
+Signal peptide_18
+Signal peptide_20
+Signal peptide_23
+Signal peptide_17
+Signal peptide_22
+Signal peptide_any
+Turn
+Helix
+Beta strand
+Coiled coil
+Lipidation
+Disulfide bond
+amino_acid_A
+amino_acid_C
+amino_acid_D
+amino_acid_E
+amino_acid_F
+amino_acid_G
+amino_acid_H
+amino_acid_I
+amino_acid_K
+amino_acid_L
+amino_acid_M
+amino_acid_N
+amino_acid_P
+amino_acid_Q
+amino_acid_R
+amino_acid_S
+amino_acid_T
+amino_acid_V
+amino_acid_W
+amino_acid_Y
+amino_acid_Other
