@@ -149,7 +149,7 @@ def get_loss_recovery_fn(
         batch_mask = (batch_tokens != alphabet.padding_idx).to(int)
         tokenized_batches.append((batch_tokens, batch_mask))
 
-    nnsight_model = NNsight(model, device=device)
+    nnsight_model = NNsight(model)
 
     orig_loss, zero_loss = CE_for_orig_and_zero_ablation(
         esm_model=model,
