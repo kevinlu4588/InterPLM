@@ -1,3 +1,4 @@
+anthropic
 biopython
 datasets
 einops
@@ -10,6 +11,7 @@ nnsight
 numpy
 pandas
 plotly
+python-dotenv
 pyyaml
 py3dmol
 scikit-learn

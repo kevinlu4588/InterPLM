@@ -20,7 +20,10 @@ data/pdbs/*
 *.tsv
 *.npz
 *.gz
-
+*validation.txt
+*prompt.txt
+*description.txt
+*report.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

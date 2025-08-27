@@ -1,109 +1,2127 @@
 Active site_Proton acceptor
-Active site_Proton donor
-Active site_Nucleophile
 Active site_Charge relay system
+Active site_Nucleophile
+Active site_Proton donor
+Active site_Proton donor/acceptor
+Active site_Phosphocysteine intermediate
+Active site_Glycyl thioester intermediate
+Active site_Acyl-ester intermediate
+Active site_Schiff-base intermediate with substrate
+Active site_Acyl-thioester intermediate
+Active site_Cysteine persulfide intermediate
+Active site_4-aspartylphosphate intermediate
+Active site_Cysteine sulfenic acid (-SOH) intermediate
+Active site_Tele-phosphohistidine intermediate
+Active site_S-palmitoyl cysteine intermediate
+Active site_For GATase activity
+Active site_For 3-hydroxyacyl-CoA dehydrogenase activity
+Active site_Phosphoserine intermediate
+Active site_Pros-phosphohistidine intermediate
+Active site_O-(5'-phospho-DNA)-tyrosine intermediate
+Active site_N6-AMP-lysine intermediate
+Active site_Tele-AMP-histidine intermediate
+Active site_Schiff-base intermediate with DNA
+Active site_Electrophile
+Active site_Charge relay
+Active site_For beta-ketoacyl synthase activity
+Active site_Lowers pKa of active site Tyr
+Active site_Thioimidate intermediate
+Active site_Proton donors
+Active site_Schiff-base intermediate with dihydroxyacetone-P
+Active site_For cyclooxygenase activity
+Active site_Cysteine radical intermediate
+Active site_O-(3'-phospho-DNA)-tyrosine intermediate
+Active site_For poly [ADP-ribose] polymerase activity
+Active site_For sulfotransferase activity
+Active site_For ring-opening step
 Active site_any
 Binding site_Zn(2+)
-Binding site_GTP
 Binding site_Ca(2+)
+Binding site_ATP
 Binding site_substrate
 Binding site_Mg(2+)
-Binding site_a divalent metal cation
-Binding site_NADP(+)
-Binding site_ATP
-Binding site_Fe cation
-Binding site_S-adenosyl-L-methionine
+Binding site_GTP
 Binding site_NAD(+)
-Binding site_GDP
-Binding site_glutathione
-Binding site_NADPH
-Binding site_K(+)
-Binding site_3'-phosphoadenylyl sulfate
+Binding site_FAD
+Binding site_NADP(+)
 Binding site_Mn(2+)
-Binding site_DNA
+Binding site_S-adenosyl-L-methionine
+Binding site_Fe cation
 Binding site_[4Fe-4S] cluster
+Binding site_a divalent metal cation
 Binding site_Cu cation
-Binding site_a beta-D-galactoside
-Binding site_CoA
-Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3,4,5-trisphosphate)
-Binding site_Cu(2+)
+Binding site_ADP
+Binding site_AMP
 Binding site_heme b
-Binding site_[2Fe-2S] cluster
+Binding site_K(+)
+Binding site_heme
+Binding site_pyridoxal 5'-phosphate
+Binding site_FMN
+Binding site_GDP
 Binding site_Na(+)
+Binding site_[2Fe-2S] cluster
+Binding site_UDP-alpha-D-glucose
+Binding site_glutathione
+Binding site_L-glutamate
+Binding site_CoA
+Binding site_acetyl-CoA
+Binding site_heme c
+Binding site_dimethylallyl diphosphate
+Binding site_NADPH
+Binding site_Cu(2+)
+Binding site_3'-phosphoadenylyl sulfate
+Binding site_D-glucose
 Binding site_UDP-N-acetyl-alpha-D-glucosamine
-Binding site_UDP-N-acetyl-alpha-D-galactosamine
+Binding site_2-oxoglutarate
+Binding site_UDP
+Binding site_beta-D-fructose 2,6-bisphosphate
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3-phosphate)
+Binding site_3',5'-cyclic AMP
+Binding site_DNA
+Binding site_D-glucose 6-phosphate
+Binding site_isopentenyl diphosphate
+Binding site_S-adenosyl-L-homocysteine
+Binding site_a beta-D-glucoside
+Binding site_IMP
+Binding site_D-glyceraldehyde 3-phosphate
+Binding site_CTP
+Binding site_3',5'-cyclic GMP
+Binding site_chlorophyll a
+Binding site_phosphate
+Binding site_L-aspartate
+Binding site_(2R)-3-phosphoglycerate
+Binding site_1D-myo-inositol hexakisphosphate
+Binding site_thiamine diphosphate
+Binding site_chloride
+Binding site_heparin
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-4,5-bisphosphate)
+Binding site_a protein
+Binding site_Fe(3+)
+Binding site_a carbohydrate
 Binding site_chitin
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3,5-bisphosphate)
+Binding site_UDP-alpha-D-galactose
+Binding site_mRNA
+Binding site_GMP
+Binding site_beta-D-fructose 6-phosphate
+Binding site_UTP
+Binding site_Ni(2+)
+Binding site_an acyl-CoA
 Binding site_a glycoprotein
+Binding site_CMP-N-acetyl-beta-neuraminate
+Binding site_serotonin
+Binding site_chlorophyll b
+Binding site_hydrogencarbonate
+Binding site_beta-D-fructose 1,6-bisphosphate
+Binding site_xyloglucan
+Binding site_L-glutamine
+Binding site_RNA
+Binding site_UDP-alpha-D-glucuronate
+Binding site_glycine
+Binding site_pyrroloquinoline quinone
+Binding site_[3Fe-4S] cluster
+Binding site_an alpha-D-glucoside
+Binding site_Mo-bis(molybdopterin guanine dinucleotide)
+Binding site_GDP-alpha-D-mannose
+Binding site_pyruvate
+Binding site_dGTP
+Binding site_dCTP
+Binding site_(2E)-geranyl diphosphate
+Binding site_O2
+Binding site_4-aminobutanoate
+Binding site_Fe(2+)
+Binding site_(E)-4-coumaroyl-AMP
+Binding site_tRNA
+Binding site_UDP-N-acetyl-alpha-D-galactosamine
+Binding site_(1,3-beta-D-glucosyl)n
+Binding site_(2R)-2-phosphoglycerate
+Binding site_dTTP
+Binding site_L-methionine
+Binding site_dUMP
+Binding site_a beta-lactam
+Binding site_L-serine
+Binding site_CDP
+Binding site_L-arginine
+Binding site_GDP-beta-L-fucose
+Binding site_carbamoyl phosphate
+Binding site_adenosine 3',5'-bisphosphate
+Binding site_alpha-D-glucose 1,6-bisphosphate
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol 4-phosphate)
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol)
+Binding site_N-acetyl-D-glucosamine
+Binding site_3',3'-c-di-GMP
+Binding site_D-threo-isocitrate
+Binding site_phosphoenolpyruvate
+Binding site_angiotensin II
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3,4,5-trisphosphate)
+Binding site_(7,8-dihydropterin-6-yl)methyl diphosphate
+Binding site_Cu(+)
+Binding site_[CaMn4O5] cluster
+Binding site_UDP-alpha-D-xylose
+Binding site_alpha-D-mannopyranose
+Binding site_2',3'-cGAMP
+Binding site_L-ornithine
+Binding site_(E)-cinnamate
+Binding site_L-tryptophan
+Binding site_(3S)-3-hydroxy-3-methylglutaryl-CoA
+Binding site_L-tyrosine
+Binding site_5-phospho-alpha-D-ribose 1-diphosphate
+Binding site_(R)-carnitine
+Binding site_abscisate
+Binding site_phosphocholine
+Binding site_Co(2+)
+Binding site_oxaloacetate
+Binding site_a ribonucleoside 5'-phosphate
+Binding site_a peptide
+Binding site_sn-glycerol 3-phosphate
+Binding site_NADH
+Binding site_alpha-D-glucose 6-phosphate
+Binding site_a purine D-ribonucleoside
+Binding site_L-ascorbate
+Binding site_Mo-molybdopterin
+Binding site_a beta-D-galactoside
+Binding site_(indol-3-yl)acetate
+Binding site_ergotamine
+Binding site_5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Binding site_dATP
+Binding site_folate
+Binding site_a peptide antigen
+Binding site_(2E,6E)-farnesyl diphosphate
+Binding site_D-serine
+Binding site_CMP
+Binding site_glycerol
+Binding site_fumarate
+Binding site_glyoxylate
+Binding site_histamine
+Binding site_a (Z)-N-(sulfonatooxy)alkanimidothioate
+Binding site_(6R)-10-formyltetrahydrofolate
+Binding site_a 1,2-diacyl-sn-glycero-3-phosphate
+Binding site_a CDP-1,2-diacyl-sn-glycerol
+Binding site_an anthocyanidin
+Binding site_1D-myo-inositol 4-phosphate
+Binding site_a ubiquinone
+Binding site_UMP
+Binding site_1D-myo-inositol 1,4,5,6-tetrakisphosphate
+Binding site_cob(II)alamin
+Binding site_cholesterol
+Binding site_dihydroxyacetone phosphate
+Binding site_succinate
+Binding site_spermidine
+Binding site_1D-myo-inositol 6-phosphate
+Binding site_urate
+Binding site_dopamine
+Binding site_ITP
+Binding site_beta-D-glucose
+Binding site_adenosine
+Binding site_diphosphate
+Binding site_pepstatin A
+Binding site_ssDNA
+Binding site_shikimate
+Binding site_17beta-hydroxy-5alpha-androstan-3-one
+Binding site_beta-nicotinamide D-ribonucleotide
+Binding site_a 2'-deoxyribonucleoside 5'-triphosphate
+Binding site_L-histidine
+Binding site_3-phosphoshikimate
+Binding site_tungstopterin
+Binding site_a ribonucleoside 5'-triphosphate
+Binding site_D-galactose
+Binding site_calcitriol
+Binding site_D-ribose 5-phosphate
+Binding site_D-proline
+Binding site_3-oxoeicosanoyl-CoA
+Binding site_dTMP
+Binding site_L-lysine
+Binding site_octanoyl-CoA
+Binding site_D-ribulose 5-phosphate
+Binding site_L-citrulline
+Binding site_alpha-D-galactose
+Binding site_L-phenylalanine
+Binding site_5-methyltetrahydropteroyltri-L-glutamate
+Binding site_heparan sulfate group
+Binding site_1D-myo-inositol 1,3,4-trisphosphate
+Binding site_(3R)-3-hydroxydecanoyl-CoA
+Binding site_L-leucine
+Binding site_3,3',5-triiodo-L-thyronine
+Binding site_sucrose
+Binding site_dsDNA
+Binding site_(6S)-5,6,7,8-tetrahydrofolate
+Binding site_1-deoxy-D-xylulose 5-phosphate
+Binding site_coproporphyrinogen III
+Binding site_(S)-malate
+Binding site_tetradecanoyl-CoA
+Binding site_a mannooligosaccharide derivative
+Binding site_L-homoserine
+Binding site_alpha-D-mannose 1-phosphate
+Binding site_5-aminolevulinate
+Binding site_an N-acyl-D-mannosamine 6-phosphate
+Binding site_hyaluronan
+Binding site_a nucleoside 3',5'-cyclic phosphate
+Binding site_Cd(2+)
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-L-serine
+Binding site_adenosylcob(III)alamin
+Binding site_(6S)-5-methyl-5,6,7,8-tetrahydrofolate
+Binding site_uracil
+Binding site_L-thyroxine
+Binding site_adenosine 5'-phosphosulfate
+Binding site_succinyl-CoA
+Binding site_geranylgeranyl diphosphate
+Binding site_an N-acyl-D-mannosamine
+Binding site_D-fructose
+Binding site_D-fructose 6-phosphate
+Binding site_hexacosanoate
+Binding site_8-oxoguanine
+Binding site_S-methyl-5'-thioadenosine
+Binding site_beta-D-fructose
+Binding site_hexadecanoate
+Binding site_malonyl-CoA
+Binding site_alpha,alpha-trehalose
+Binding site_3-hydroxy-L-kynurenine
+Binding site_choline
+Binding site_H(+)
+Binding site_XMP
+Binding site_1D-myo-inositol 1,3,4,5-tetrakisphosphate
+Binding site_3-dehydroquinate
+Binding site_a quinone
+Binding site_CDP-choline
+Binding site_2-(N(omega)-L-arginino)succinate
+Binding site_salicylate
+Binding site_aceneuramate
+Binding site_coenzyme F420-(gamma-Glu)n
+Binding site_pheophytin a
+Binding site_(2R,3S)-homoisocitrate
+Binding site_biotin
+Binding site_pemetrexed
+Binding site_D-dopa
+Binding site_fumonisin B1
+Binding site_ADP-D-ribose
+Binding site_L-valine
+Binding site_arginine
+Binding site_hexacosanoyl-CoA
+Binding site_acetate
+Binding site_an all-trans-polyprenyl diphosphate
+Binding site_5-(2-oxoethylideneamino)-6-(D-ribitylamino)uracil
+Binding site_2',3'-cUAMP
+Binding site_(6S)-NADPHX
+Binding site_iminosuccinate
+Binding site_coproporphyrinogen I
+Binding site_progesterone
+Binding site_6-hydroxy-FAD
+Binding site_4-amino-2-methyl-5-(diphosphooxymethyl)pyrimidine
+Binding site_7-hydroxy-6-methyl-8-(1-D-ribityl)lumazine
+Binding site_5-(2-oxopropylideneamino)-6-(D-ribitylamino)uracil
+Binding site_17beta-estradiol
+Binding site_N-methylethanolamine phosphate
+Binding site_Fe(II)-heme a
+Binding site_N(6)-(1,2-dicarboxyethyl)-AMP
+Binding site_hybrid [4Fe-2O-2S] cluster
+Binding site_N-acetylneuraminate
+Binding site_orotidine 5'-phosphate
+Binding site_alpha-L-arabinofuranose
+Binding site_citrate
+Binding site_L-alanine
+Binding site_L-homocysteine
+Binding site_(2E)-4-hydroxy-3-methylbut-2-enyl diphosphate
+Binding site_beta-D-galactose
+Binding site_a 1,2-diacyl-sn-glycero-3-phosphocholine
+Binding site_anthranilate
+Binding site_N(6)-methyl-AMP
+Binding site_(R)-noradrenaline
+Binding site_prenylated FMN
+Binding site_deamido-NAD(+)
+Binding site_dolichyl diphosphooligosaccharide
+Binding site_jasmonate
+Binding site_L-kynurenine
+Binding site_5-amino-6-(D-ribitylamino)uracil
+Binding site_an N-acylsphing-4-enine
+Binding site_gibberellin A3
+Binding site_a 2-acyl-6-[6-phosphoethanolamine-alpha-D-mannosyl-(1->2)-6-phosphoethanolamine-alpha-D-mannosyl-(1->6)-2-phosphoethanolamine-alpha-D-mannosyl-(1->4)-alpha-D-glucosaminyl]-1-(1-radyl,2-acyl-sn-glycero-3-phospho)-1D-myo-inositol
+Binding site_ADP-D-glycero-beta-D-manno-heptose
+Binding site_(8S)-8-amino-7-oxononanoate
+Binding site_N-[(R)-4-phosphopantothenoyl]-L-cysteine
+Binding site_2-oxo-dATP
+Binding site_8-oxo-dGTP
+Binding site_fatty acid 16:0
+Binding site_3-iodo-L-tyrosine
+Binding site_21-hydroxyprogesterone
+Binding site_Nd(3+)
+Binding site_sulfate
+Binding site_(R)-lactate
+Binding site_W-bis(molybdopterin guanine dinucleotide)
+Binding site_8-(9H-purin-6-yl)-2-oxa-8-azabicyclo[3.3.1]nona-3,6-diene-4,6-dicarbaldehyde
+Binding site_beta-D-fructose 1-phosphate
+Binding site_gibberellin A4
+Binding site_deoxycholate
+Binding site_L-cysteine
+Binding site_(R)-2-hydroxyglutarate
+Binding site_1-tetradecanoyl-sn-glycerol 3-phosphate
+Binding site_cyanocob(III)alamin
+Binding site_all-trans-retinoate
+Binding site_an N-(acyl)-sphingosylphosphocholine
+Binding site_UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamate
+Binding site_poly(ethylene terephthalate)
+Binding site_2-[(2R,5Z)-2-carboxy-4-methylthiazol-5(2H)-ylidene]ethyl phosphate
+Binding site_oxalate
+Binding site_(6R)-5,10-methylene-5,6,7,8-tetrahydrofolate
+Binding site_phylloquinone
+Binding site_creatine
+Binding site_(S)-lactate
+Binding site_ethanolamine
+Binding site_L-quinate
+Binding site_1-(9Z-octadecenoyl)-sn-glycero-3-phosphate
+Binding site_7alpha,25-dihydroxycholesterol
+Binding site_nicotinamide
+Binding site_1-hexadecanoyl-sn-glycero-3-phosphate
+Binding site_(R)-malate
+Binding site_chenodeoxycholate
+Binding site_pyridoxal
+Binding site_an alpha-L-fucosyl-(1->2)-beta-D-galactosyl derivative
+Binding site_1D-myo-inositol 1,4-bisphosphate
+Binding site_alpha-L-iduronate
+Binding site_(R)-5-diphosphomevalonate
+Binding site_aldosterone
+Binding site_5-hydroxymethyl-dUMP
+Binding site_ADP-alpha-D-glucose
+Binding site_Fe(III)-coprogen
+Binding site_resiniferatoxin
+Binding site_P(1),P(5)-bis(5'-adenosyl) pentaphosphate
+Binding site_N(1)-(5-phospho-beta-D-ribosyl)glycinamide
+Binding site_a cardiolipin
+Binding site_alpha-maltose 1-phosphate
+Binding site_a D-galactosylceramide
+Binding site_iodide
+Binding site_dUTP
+Binding site_3'cADPR
+Binding site_alpha-D-glucose
+Binding site_O-phospho-L-serine
+Binding site_a 2-oxocarboxylate
+Binding site_dihydroxyacetone
+Binding site_(9Z)-octadecenoate
+Binding site_beta-D-glucose 6-phosphate
+Binding site_heme d1
+Binding site_dolichyl phosphate
+Binding site_L-saccharopine
+Binding site_N-[(5S)-5-amino-5-carboxypentanoyl]-L-cysteinyl-D-valine
+Binding site_a 2,3-saturated acyl-CoA
+Binding site_nitrite
+Binding site_Fe-coproporphyrin III
+Binding site_tetradecanoate
+Binding site_(R)-methylmalonyl-CoA
+Binding site_S-adenosyl 3-(methylsulfanyl)propylamine
+Binding site_(2R)-2,3-bisphosphoglycerate
+Binding site_strychnine
+Binding site_5-diphospho-1D-myo-inositol 1,2,3,4,6-pentakisphosphate
+Binding site_chorismate
+Binding site_beta-L-fucose
+Binding site_ascopyrone M
+Binding site_guanidinoacetate
+Binding site_(S)-thalidomide
+Binding site_(S)-2-amino-6-oxohexanoate
+Binding site_peptidoglycan
+Binding site_1,2-dioctanoyl-sn-glycero-3-phospho-(1D-myo-inositol-4,5-bisphosphate)
+Binding site_arsenite
+Binding site_alpha-D-glucose 1-phosphate
+Binding site_a 1-acyl-sn-glycero-3-phosphate
+Binding site_an N-acyl-1,2-diacyl-sn-glycero-3-phosphoethanolamine
+Binding site_La(3+)
+Binding site_a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-inositol-3,4-bisphosphate)
+Binding site_heme a3
+Binding site_cyclosporin A
+Binding site_siroheme
+Binding site_a carboxymycobactin
+Binding site_3,5-diiodo-L-tyrosine
+Binding site_[Ni-4Fe-4S] cluster
+Binding site_queuine
+Binding site_dTDP-alpha-D-glucose
+Binding site_(S)-warfarin
+Binding site_N-acetyl-L-aspartate
+Binding site_a beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl derivative
+Binding site_N-acetyl-alpha-D-galactosamine
+Binding site_a dipeptide
+Binding site_N(2)-acetyl-L-ornithine
+Binding site_L-cystine
+Binding site_UDP-N-acetyl-alpha-D-mannosaminouronate
+Binding site_caffeine
+Binding site_4-O-phospho-L-tyrosine
+Binding site_GDP-alpha-D-mannuronate
+Binding site_molybdate
+Binding site_alpha-L-fucose
+Binding site_L-glutamyl-L-arginyl-glycyl-L-methionyl-L-threonine
+Binding site_sophorose
+Binding site_CMP-(2-aminoethyl)phosphonate
+Binding site_echinenone
+Binding site_L-threonine
+Binding site_enterobactin
+Binding site_(4E,8E)-10-(4,6-dihydroxy-7-methyl-3-oxo-1,3-dihydro-2-benzofuran-5-yl)-4,8-dimethyldeca-4,8-dienoate
+Binding site_staurosporine
+Binding site_9-cis-retinoate
+Binding site_spermine
+Binding site_fluoroacetate
+Binding site_an N-carbamoyl-L-alpha-amino acid
+Binding site_3-methyl-2-oxobutanoate
+Binding site_a 2-deoxystreptamine antibiotic
+Binding site_a plastoquinone
+Binding site_a phospholipid derivative
+Binding site_N-eicosanoyl ethanolamine
+Binding site_xylitol
+Binding site_isopenicillin N
+Binding site_D-ribulose 1,5-bisphosphate
+Binding site_an N-acylsphingoid base 1-phosphate
+Binding site_(R)-lipoyl-5'-AMP
+Binding site_agmatine
+Binding site_imipenem
+Binding site_sphing-4-enine 1-phosphate
+Binding site_beta-D-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)-di-trans,octa-cis-undecaprenyl diphosphate
+Binding site_(E)-feruloyl-AMP
+Binding site_(E)-caffeoyl-AMP
+Binding site_heme o
 Binding site_any
 Cofactor_Mg(2+)
 Cofactor_Zn(2+)
+Cofactor_Ca(2+)
+Cofactor_Mn(2+)
+Cofactor_FAD
+Cofactor_heme
+Cofactor_pyridoxal 5'-phosphate
+Cofactor_[4Fe-4S] cluster
+Cofactor_Fe(2+)
+Cofactor_heme b
+Cofactor_Fe cation
+Cofactor_a divalent metal cation
+Cofactor_FMN
+Cofactor_[2Fe-2S] cluster
+Cofactor_Cu cation
+Cofactor_Cu(2+)
+Cofactor_L-ascorbate
+Cofactor_K(+)
+Cofactor_NAD(+)
+Cofactor_thiamine diphosphate
+Cofactor_Co(2+)
+Cofactor_heme c
+Cofactor_[3Fe-4S] cluster
+Cofactor_Fe(3+)
+Cofactor_pyruvate
+Cofactor_(R)-lipoate
+Cofactor_L-topaquinone
+Cofactor_a metal cation
+Cofactor_chloride
+Cofactor_lysine tyrosylquinone residue
+Cofactor_pyrroloquinoline quinone
+Cofactor_Ni(2+)
+Cofactor_Mo-bis(molybdopterin guanine dinucleotide)
+Cofactor_adenosylcob(III)alamin
+Cofactor_NADP(+)
+Cofactor_glutathione
+Cofactor_(6R)-5,10-methylene-5,6,7,8-tetrahydrofolate
+Cofactor_Mo-molybdopterin
+Cofactor_siroheme
+Cofactor_biotin
 Cofactor_any
 Glycosylation_N-linked (GlcNAc...) asparagine
 Glycosylation_O-linked (GalNAc...) threonine
 Glycosylation_O-linked (GlcNAc) serine
+Glycosylation_O-linked (GalNAc...) serine
+Glycosylation_N-linked (GlcNAc...) (complex) asparagine
+Glycosylation_O-linked (GlcNAc) threonine
+Glycosylation_O-linked (Xyl...) (chondroitin sulfate) serine
+Glycosylation_O-linked (Xyl...) (glycosaminoglycan) serine
+Glycosylation_O-linked (Man...) threonine
+Glycosylation_C-linked (Man) tryptophan
+Glycosylation_N-linked (Glc) (glycation) lysine
+Glycosylation_N-linked (GlcNAc...) (high mannose) asparagine
+Glycosylation_O-linked (Man) threonine
+Glycosylation_O-linked (Man) serine
+Glycosylation_O-linked (Ara...) hydroxyproline
+Glycosylation_O-linked (Xyl...) (heparan sulfate) serine
+Glycosylation_O-linked (Gal...) hydroxylysine
+Glycosylation_O-linked (Man...) serine
+Glycosylation_N-linked (GlcNAc...) (hybrid) asparagine
+Glycosylation_N-linked (GlcNAc) asparagine
+Glycosylation_O-linked (GalNAc) threonine
+Glycosylation_N-linked (GlcNAc...) (keratan sulfate) asparagine
+Glycosylation_N-beta-linked (GlcNAc) arginine
+Glycosylation_O-linked (Gal...) threonine
+Glycosylation_N-linked (Glc...) asparagine
+Glycosylation_O-linked (Glc...) tyrosine
+Glycosylation_O-linked (Man6P...) threonine
+Glycosylation_O-linked (Fuc) threonine
+Glycosylation_(Microbial infection) N-beta-linked (GlcNAc) arginine
+Glycosylation_O-linked (Glc...) serine
+Glycosylation_O-linked (HexNAc...) threonine
+Glycosylation_N-linked (GlcNAc...) (paucimannose) asparagine
 Glycosylation_any
 Modified residue_Phosphoserine
-Modified residue_N6-acetyllysine
 Modified residue_Phosphothreonine
+Modified residue_N6-acetyllysine
 Modified residue_Phosphotyrosine
 Modified residue_N6-succinyllysine
-Modified residue_N6-(2-hydroxyisobutyryl)lysine
-Modified residue_N6-lactoyllysine
 Modified residue_N-acetylalanine
+Modified residue_Omega-N-methylarginine
+Modified residue_N-acetylmethionine
+Modified residue_N-acetylserine
+Modified residue_Asymmetric dimethylarginine
+Modified residue_N6-(2-hydroxyisobutyryl)lysine
+Modified residue_N6-methyllysine
+Modified residue_4-carboxyglutamate
+Modified residue_4-hydroxyproline
+Modified residue_N6-lactoyllysine
+Modified residue_N6-(pyridoxal phosphate)lysine
+Modified residue_Pyrrolidone carboxylic acid
+Modified residue_N6,N6-dimethyllysine
+Modified residue_Cysteine methyl ester
+Modified residue_N6-(beta-hydroxybutyryl)lysine
+Modified residue_Sulfotyrosine
+Modified residue_S-nitrosocysteine
 Modified residue_N6-crotonyllysine
 Modified residue_N6-glutaryllysine
-Modified residue_N-acetylmethionine
-Modified residue_N6-methyllysine
-Modified residue_N6-(beta-hydroxybutyryl)lysine
-Modified residue_Omega-N-methylarginine
-Modified residue_Citrulline
-Modified residue_Asymmetric dimethylarginine
-Modified residue_N6-butyryllysine
-Modified residue_N-acetylserine
-Modified residue_N6,N6-dimethyllysine
 Modified residue_N6,N6,N6-trimethyllysine
-Modified residue_Cysteine methyl ester
-Modified residue_Symmetric dimethylarginine
-Modified residue_ADP-ribosylserine
+Modified residue_Phenylalanine amide
 Modified residue_N-acetylthreonine
+Modified residue_Citrulline
+Modified residue_3'-nitrotyrosine
+Modified residue_Hydroxyproline
+Modified residue_Dimethylated arginine
+Modified residue_Deamidated asparagine
+Modified residue_N6-malonyllysine
+Modified residue_Symmetric dimethylarginine
+Modified residue_PolyADP-ribosyl glutamic acid
+Modified residue_Leucine amide
+Modified residue_Methionine sulfoxide
+Modified residue_Allysine
+Modified residue_Valine amide
+Modified residue_ADP-ribosylserine
+Modified residue_Phosphohistidine
+Modified residue_N6-butyryllysine
+Modified residue_S-(2-succinyl)cysteine
+Modified residue_N-acetylvaline
+Modified residue_5-hydroxylysine
+Modified residue_N-acetylglycine
+Modified residue_4-aspartylphosphate
+Modified residue_N6-carboxylysine
+Modified residue_N6-methylated lysine
+Modified residue_N-acetylproline
+Modified residue_Tryptophan amide
+Modified residue_Deamidated glutamine
+Modified residue_S-glutathionyl cysteine
+Modified residue_Cysteine sulfenic acid (-SOH)
+Modified residue_2',4',5'-topaquinone
+Modified residue_Cysteine persulfide
+Modified residue_ADP-ribosyl glutamic acid
+Modified residue_N6-(retinylidene)lysine
+Modified residue_N5-methylglutamine
+Modified residue_N6-lipoyllysine
+Modified residue_ADP-ribosylcysteine
+Modified residue_Cysteine sulfonic acid (-SO3H)
+Modified residue_Cysteine amide
+Modified residue_Arginine amide
+Modified residue_Methionine amide
+Modified residue_ADP-ribosylarginine
+Modified residue_5-glutamyl polyglutamate
+Modified residue_Tele-8alpha-FAD histidine
+Modified residue_Isoleucine amide
+Modified residue_3-oxoalanine (Cys)
+Modified residue_Pyruvic acid (Ser)
+Modified residue_N-formylmethionine
+Modified residue_Glycine amide
+Modified residue_(3R)-3-hydroxyaspartate
+Modified residue_N-acetylcysteine
+Modified residue_Glutamate methyl ester (Glu)
+Modified residue_2,3-didehydroalanine (Ser)
+Modified residue_Proline amide
+Modified residue_Cysteine sulfinic acid (-SO2H)
+Modified residue_N6-propionyllysine
+Modified residue_Asparagine amide
+Modified residue_Tyrosine amide
+Modified residue_Lysine amide
+Modified residue_(3S)-3-hydroxyasparagine
+Modified residue_Nitrated tyrosine
+Modified residue_O-AMP-threonine
+Modified residue_S-8alpha-FAD cysteine
+Modified residue_Glutamine amide
+Modified residue_Tele-methylhistidine
+Modified residue_Methionine (R)-sulfoxide
+Modified residue_Pros-8alpha-FAD histidine
+Modified residue_S-(2,3-dicarboxypropyl)cysteine
+Modified residue_N,N,N-trimethylalanine
+Modified residue_(3R)-3-hydroxyasparagine
+Modified residue_Leucine methyl ester
+Modified residue_O-(pantetheine 4'-phosphoryl)serine
+Modified residue_N6-(ADP-ribosyl)lysine
+Modified residue_5-glutamyl serotonin
+Modified residue_Pros-methylhistidine
+Modified residue_Pyrrolidone carboxylic acid (Glu)
+Modified residue_Pentaglycyl murein peptidoglycan amidated threonine
+Modified residue_S-methylcysteine
+Modified residue_Omega-N-methylated arginine
+Modified residue_N6-poly(methylaminopropyl)lysine
+Modified residue_(Microbial infection) O-acetylthreonine
+Modified residue_2,3-didehydrobutyrine
+Modified residue_N6-biotinyllysine
+Modified residue_Phosphocysteine
+Modified residue_Diphosphoserine
+Modified residue_N6-acetyl-N6-methyllysine
+Modified residue_S-4a-FMN cysteine
+Modified residue_O-acetylserine
+Modified residue_Phosphoarginine
+Modified residue_Alanine amide
+Modified residue_N-methylphenylalanine
+Modified residue_3-hydroxyproline
+Modified residue_N-acetylaspartate
+Modified residue_(Z)-2,3-didehydrobutyrine
+Modified residue_O-AMP-tyrosine
+Modified residue_Blocked amino end (Ala)
+Modified residue_1-thioglycine
+Modified residue_(Microbial infection) O-acetylserine
+Modified residue_5-glutamyl glycerylphosphorylethanolamine
+Modified residue_N-methylaspartate
 Modified residue_any
 Transit peptide_Mitochondrion
+Transit peptide_Chloroplast
+Transit peptide_Chloroplast and mitochondrion
+Transit peptide_Thylakoid
+Transit peptide_Peroxisome
+Transit peptide_Chloroplast and chromoplast
 Transit peptide_any
 Compositional bias_Basic and acidic residues
 Compositional bias_Polar residues
 Compositional bias_Low complexity
-Compositional bias_Basic residues
 Compositional bias_Acidic residues
-Compositional bias_Gly residues
+Compositional bias_Basic residues
 Compositional bias_Pro residues
+Compositional bias_Gly residues
 Compositional bias_any
-Domain_Ig-like V-type
-Domain_Ig-like C1-type
+Domain_Protein kinase
 Domain_EF-hand 1
 Domain_EF-hand 2
-Domain_Ig-like C2-type
-Domain_C-type lectin
+Domain_bHLH
+Domain_SH3
+Domain_Peptidase S1
+Domain_Ig-like C2-type 2
+Domain_Ig-like C2-type 1
+Domain_PH
+Domain_Helicase ATP-binding
 Domain_EF-hand 3
+Domain_Helicase C-terminal
+Domain_RRM
+Domain_NR LBD
+Domain_Ig-like V-type
+Domain_RRM 2
+Domain_RRM 1
+Domain_bZIP
+Domain_EGF-like
+Domain_AGC-kinase C-terminal
+Domain_SH2
+Domain_BTB
+Domain_EF-hand 4
+Domain_LRRCT
+Domain_Ig-like C2-type
+Domain_EGF-like 1
+Domain_EGF-like 2
+Domain_Ig-like C2-type 3
+Domain_Globin
+Domain_C2
+Domain_C-type lectin
+Domain_Tyrosine-protein phosphatase
+Domain_LRRNT
+Domain_B30.2/SPRY
+Domain_Peptidase M12B
+Domain_PDZ
+Domain_Thioredoxin
+Domain_IF rod
+Domain_Fibronectin type-III 2
+Domain_Fibronectin type-III 1
+Domain_SAM
+Domain_LIM zinc-binding 2
+Domain_LIM zinc-binding 1
+Domain_Disintegrin
+Domain_N-acetyltransferase
+Domain_F-box
+Domain_SET
+Domain_ABC transporter
+Domain_USP
+Domain_Ig-like C1-type
+Domain_GST C-terminal
+Domain_EGF-like 3
+Domain_KRAB
+Domain_Fibronectin type-III
+Domain_FAD-binding FR-type
+Domain_Cadherin 2
+Domain_Fe2OG dioxygenase
+Domain_Cadherin 1
+Domain_UBC core
+Domain_RRM 3
+Domain_Ubiquitin-like
+Domain_VWFA
+Domain_C2 1
+Domain_TIR
+Domain_C2 2
+Domain_Nudix hydrolase
+Domain_Cadherin 3
+Domain_Cadherin 4
+Domain_Ig-like
+Domain_Peptidase A1
+Domain_EGF-like 4
+Domain_Ig-like C2-type 4
+Domain_J
+Domain_GST N-terminal
+Domain_AB hydrolase-1
+Domain_G-alpha
+Domain_Kinesin motor
+Domain_t-SNARE coiled-coil homology
+Domain_PB1
+Domain_Cadherin 5
+Domain_CBS 1
+Domain_CBS 2
+Domain_THD
+Domain_Sm
+Domain_Death
+Domain_EF-hand
+Domain_Rho-GAP
+Domain_UBA
+Domain_Sushi 2
+Domain_Sushi 1
+Domain_HTH myb-type 2
+Domain_HTH myb-type 1
+Domain_Histidine kinase
+Domain_Dynamin-type G
+Domain_PAC
+Domain_PLAT
+Domain_SH3 1
+Domain_PPM-type phosphatase
+Domain_Peptidase S8
+Domain_SH3 2
+Domain_PX
+Domain_Rhodanese
+Domain_LisH
+Domain_Response regulatory
+Domain_RGS
+Domain_BAR
+Domain_DHHC
+Domain_Calponin-homology (CH)
+Domain_FHA
+Domain_Kazal-like
+Domain_Gla
+Domain_PAS 1
+Domain_PAS 2
+Domain_ABC transmembrane type-1
+Domain_FZ
+Domain_KH 2
+Domain_LIM zinc-binding 3
+Domain_KH 1
+Domain_Collagen-like
+Domain_EGF-like 5
+Domain_PDEase
+Domain_PDZ 2
+Domain_PDZ 1
+Domain_PID
+Domain_tr-type G
+Domain_Ricin B-type lectin
+Domain_JmjC
+Domain_Ig-like C2-type 5
+Domain_FAD-binding PCMH-type
+Domain_MPN
+Domain_MADS-box
+Domain_ATP-grasp
+Domain_FERM
+Domain_PPIase cyclophilin-type
+Domain_CUB 2
+Domain_CUB 1
+Domain_PCI
+Domain_Deacetylase sirtuin-type
+Domain_Septin-type G
+Domain_CARD
+Domain_F-BAR
+Domain_Cytochrome b5 heme-binding
+Domain_2Fe-2S ferredoxin-type
+Domain_DH
+Domain_CRIB
+Domain_Radical SAM core
+Domain_SAP
+Domain_WW 2
+Domain_WW 1
+Domain_EGF-like 6
+Domain_Sushi 3
+Domain_ZP
+Domain_KH
+Domain_MCM
+Domain_Fibrinogen C-terminal
+Domain_POU-specific
+Domain_WH2
+Domain_TSP type-1
+Domain_GH18
+Domain_C1q
+Domain_PSI
+Domain_HTH myb-type
+Domain_Lipoxygenase
+Domain_BRCT
+Domain_BACK
+Domain_IGFBP N-terminal
+Domain_NTR
+Domain_IQ
+Domain_Guanylate kinase-like
+Domain_Rieske
+Domain_DAGKc
+Domain_GH16
+Domain_SAM-dependent MTase PRMT-type
+Domain_Peptidase M14
+Domain_SOCS box
+Domain_CTCK
+Domain_SCAN box
+Domain_GED
+Domain_Glutamine amidotransferase type-1
+Domain_Rab-GAP TBC
+Domain_HECT
+Domain_Ferric oxidoreductase
+Domain_PA
+Domain_Eph LBD
+Domain_Ig-like 2
+Domain_ACT
+Domain_Ig-like 1
+Domain_UIM 1
+Domain_UIM 2
+Domain_Orange
+Domain_CS
+Domain_4Fe-4S ferredoxin-type 2
+Domain_4Fe-4S ferredoxin-type 1
+Domain_Sushi 4
+Domain_PPIase FKBP-type
+Domain_SANT
+Domain_MHD
+Domain_NAC
+Domain_sHSP
+Domain_LDL-receptor class A 2
+Domain_Thioredoxin 1
+Domain_Ig-like V-type 1
+Domain_Ig-like V-type 2
+Domain_Ras-associating
+Domain_LDL-receptor class A 1
+Domain_Thioredoxin 2
+Domain_v-SNARE coiled-coil homology
+Domain_STAS
+Domain_I-EGF 4
+Domain_Arf-GAP
+Domain_I-EGF 3
+Domain_I-EGF 2
+Domain_I-EGF 1
+Domain_START
+Domain_Piwi
+Domain_WW
+Domain_MARVEL
+Domain_Tudor
+Domain_PAS
+Domain_KH 3
+Domain_Calponin-homology (CH) 1
+Domain_Calponin-homology (CH) 2
+Domain_GOLD
+Domain_LIM zinc-binding
+Domain_PARP catalytic
+Domain_MIT
+Domain_PAZ
+Domain_H15
+Domain_CMP/dCMP-type deaminase
+Domain_Sema
+Domain_MH2
+Domain_WH1
+Domain_GAIN-B
+Domain_GB1/RHD3-type G
+Domain_MH1
+Domain_Alpha-carbonic anhydrase
+Domain_UPAR/Ly6
+Domain_Calpain catalytic
+Domain_PDZ 3
+Domain_Inhibitor I9
+Domain_GRAM
+Domain_Tudor-knot
+Domain_MATH
+Domain_ADF-H
+Domain_TSP type-1 2
+Domain_TSP type-1 1
+Domain_PWWP
+Domain_Cyclin N-terminal
+Domain_DEP
+Domain_DRBM 1
+Domain_DRBM 2
+Domain_Chromo
+Domain_SARAH
+Domain_Fatty acid hydroxylase
+Domain_PH 2
+Domain_PH 1
+Domain_GS catalytic
+Domain_LDL-receptor class A
+Domain_ITAM
+Domain_RRM 4
+Domain_LIM zinc-binding 4
+Domain_4Fe-4S ferredoxin-type
+Domain_GS beta-grasp
+Domain_MYST-type HAT
+Domain_P/Homo B
+Domain_K-box
+Domain_PAP-associated
+Domain_U-box
+Domain_Thyroglobulin type-1
+Domain_G-patch
+Domain_LCN-type CS-alpha/beta
+Domain_BRCT 1
+Domain_BRCT 2
+Domain_Hexokinase
+Domain_HAMP
+Domain_PI3K/PI4K catalytic
+Domain_Peptidase M13
+Domain_HD
+Domain_VHS
+Domain_CRAL-TRIO
+Domain_TLC
+Domain_Flavodoxin-like
+Domain_LDL-receptor class A 3
+Domain_UBX
+Domain_Cullin neddylation
+Domain_Cytochrome c
+Domain_SH3 3
+Domain_ENTH
+Domain_Ig-like 3
+Domain_PNPLA
+Domain_IPT/TIG
+Domain_Post-SET
+Domain_Fibronectin type-III 3
+Domain_CSD
+Domain_Kringle
+Domain_PAN
+Domain_TTL
+Domain_OTU
+Domain_CUB
+Domain_Ras-GEF
+Domain_Pyrin
+Domain_Myotubularin phosphatase
+Domain_GS
+Domain_Histone-fold
+Domain_CN hydrolase
+Domain_Laminin G-like
+Domain_HIT
+Domain_SWIRM
+Domain_PIPK
+Domain_Glutaredoxin
+Domain_Sushi 5
+Domain_BPTI/Kunitz inhibitor
+Domain_EGF-like 7
+Domain_EF-hand 5
+Domain_UBA 2
+Domain_VWFC
+Domain_DIX
+Domain_Pyruvate carboxyltransferase
+Domain_IQ 1
+Domain_SRCR 1
+Domain_SRCR 2
+Domain_PLD phosphodiesterase 1
+Domain_S1 motif
+Domain_UBA 1
+Domain_PLD phosphodiesterase 2
+Domain_IQ 2
+Domain_CHCH
+Domain_Lipoyl-binding
+Domain_Clip
+Domain_UIM
+Domain_Galectin
+Domain_WW 3
+Domain_Pre-SET
+Domain_OBG-type G
+Domain_Bromo
+Domain_PLA2c
+Domain_MAM
+Domain_Toprim
+Domain_ABC transmembrane type-2
+Domain_Cadherin 6
+Domain_SRCR 3
+Domain_SH2 2
+Domain_CBM1
+Domain_CP-type G
+Domain_BAH
+Domain_SH2 1
+Domain_SRCR
+Domain_4Fe-4S Mo/W bis-MGD-type
+Domain_GAF 1
+Domain_EGF-like 8
+Domain_CTLH
+Domain_LDL-receptor class A 4
+Domain_PNT
+Domain_S4 RNA-binding
+Domain_GAF 2
+Domain_IBB
+Domain_Ig-like C2-type 6
+Domain_LTD
+Domain_FCP1 homology
+Domain_Collagen-like 2
+Domain_Ferritin-like diiron
+Domain_SWIB/MDM2
+Domain_COS
+Domain_MACPF
+Domain_Collagen-like 1
+Domain_C-type lysozyme
+Domain_Ephrin RBD
+Domain_Fido
+Domain_Kringle 2
+Domain_Kringle 1
+Domain_Glutamine amidotransferase type-2
+Domain_Plastocyanin-like 2
+Domain_Plastocyanin-like 1
+Domain_Olfactomedin-like
+Domain_Guanylate cyclase
+Domain_TGS
+Domain_KA1
+Domain_YDG
+Domain_MAGE
+Domain_Peptidase M12A
+Domain_GP-PDE
+Domain_HhH
+Domain_N-terminal Ras-GEF
+Domain_NTF2
+Domain_RHD
+Domain_Photolyase/cryptochrome alpha/beta
+Domain_LEM
+Domain_ACT 2
+Domain_CBM20
+Domain_PARP alpha-helical
+Domain_HMA
+Domain_Peripheral subunit-binding (PSBD)
+Domain_ACT 1
+Domain_UmuC
+Domain_Myb-like
+Domain_Sushi
+Domain_CUE
+Domain_Ubiquitin-like 2
+Domain_GGDEF
+Domain_VWFC 2
+Domain_UCH catalytic
+Domain_VWFC 1
+Domain_Fibronectin type-III 4
+Domain_HP
+Domain_Ubiquitin-like 1
+Domain_Lon N-terminal
+Domain_KH 4
+Domain_Cupin type-1 2
+Domain_Saposin B-type
+Domain_Cupin type-1 1
+Domain_SEA
+Domain_Kazal-like 2
+Domain_RabBD
+Domain_POLO box 1
+Domain_POLO box 2
+Domain_PIK helical
+Domain_N-acetylmuramoyl-L-alanine amidase
+Domain_Agenet-like 2
+Domain_Agenet-like 1
+Domain_Macro
+Domain_MIR 3
+Domain_LRAT
+Domain_MIR 2
+Domain_MIR 1
+Domain_ACB
+Domain_Kazal-like 1
+Domain_Transferrin-like 2
+Domain_Transferrin-like 1
+Domain_Albumin 3
+Domain_HORMA
+Domain_Topo IIA-type catalytic
+Domain_REM-1
+Domain_GAF
+Domain_LDL-receptor class A 5
+Domain_BPL/LPL catalytic
+Domain_YTH
+Domain_WGR
+Domain_Longin
+Domain_TFIIS N-terminal
+Domain_Albumin 2
+Domain_Albumin 1
+Domain_PUA
+Domain_SUN
+Domain_Protein kinase 2
+Domain_Protein kinase 1
+Domain_Peptidase S53
+Domain_SMB 1
+Domain_Clp R
+Domain_BPTI/Kunitz inhibitor 1
+Domain_BPTI/Kunitz inhibitor 2
+Domain_SMB 2
+Domain_E2
+Domain_E1
+Domain_FMN hydroxy acid dehydrogenase
+Domain_RUN
+Domain_Pentraxin (PTX)
+Domain_MIF4G
+Domain_MBD
+Domain_MRH
+Domain_ShKT
+Domain_PINc
+Domain_SAM-dependent MTase C5-type
+Domain_HTH La-type RNA-binding
+Domain_3'-5' exonuclease
+Domain_SRCR 4
+Domain_L27 2
+Domain_NAF
+Domain_L27 1
+Domain_TCP
+Domain_IRS-type PTB
+Domain_GRAS
+Domain_MSP
+Domain_BRICHOS
+Domain_NodB homology
+Domain_LDL-receptor class A 7
+Domain_NACHT
+Domain_PI-PLC Y-box
+Domain_Lon proteolytic
+Domain_PI-PLC X-box
+Domain_ERCC4
+Domain_Myosin motor
+Domain_GAT
+Domain_LDL-receptor class A 6
+Domain_Exonuclease
+Domain_SPX
+Domain_Plastocyanin-like 3
+Domain_Bulb-type lectin
+Domain_Ricin B-type lectin 1
+Domain_LysM
+Domain_Importin N-terminal
+Domain_Ricin B-type lectin 2
+Domain_F5/8 type C
+Domain_UIM 3
+Domain_PINIT
+Domain_DSL
+Domain_Tify
+Domain_EGF-like 9
+Domain_L27
+Domain_P-type
+Domain_Chitin-binding type-1
+Domain_Phosphatase tensin-type
+Domain_VWFC 3
+Domain_EB1 C-terminal
+Domain_Sushi 6
+Domain_Bromo 2
+Domain_Carrier
+Domain_Pterin-binding
+Domain_Link
+Domain_Phosphagen kinase C-terminal
+Domain_Bromo 1
+Domain_RBD
+Domain_WWE
+Domain_EMI
+Domain_Fibronectin type-II 2
+Domain_MEIS N-terminal
+Domain_VOC 1
+Domain_NB-ARC
+Domain_SEFIR
+Domain_VOC 2
+Domain_Chorismate mutase
+Domain_Kringle 3
+Domain_SEC7
+Domain_Calx-beta 1
+Domain_ELM2
+Domain_SAND
+Domain_Kringle 4
+Domain_Fibronectin type-II 1
+Domain_Calx-beta 2
+Domain_SCP
+Domain_HPt
+Domain_DRBM
+Domain_JmjN
+Domain_WH2 2
+Domain_WH2 1
+Domain_ZU5
+Domain_C2 tensin-type
+Domain_Hexokinase 2
+Domain_Reticulon
+Domain_PPIase FKBP-type 1
+Domain_Hexokinase 1
+Domain_AIG1-type G
+Domain_Ku
+Domain_LRRCT 1
+Domain_LRRCT 2
+Domain_ABC transporter 2
+Domain_ABC transporter 1
+Domain_ULD
+Domain_PPIase FKBP-type 2
+Domain_F5/8 type C 2
+Domain_F5/8 type C 1
+Domain_TSP type-1 3
+Domain_Biotinyl-binding
+Domain_Laminin EGF-like 2
+Domain_CBS 3
+Domain_CBS 4
+Domain_Gnk2-homologous 2
+Domain_Gnk2-homologous 1
+Domain_CXC
+Domain_HRDC
+Domain_PABC
+Domain_C2 3
+Domain_CFEM
+Domain_VPS9
+Domain_SIS
+Domain_Phosphagen kinase N-terminal
+Domain_DHFR
+Domain_NET
+Domain_STI1 2
+Domain_STI1 1
+Domain_W2
+Domain_Laminin EGF-like 1
+Domain_Laminin N-terminal
+Domain_EH
+Domain_LysM 2
+Domain_Kazal-like 3
+Domain_RWD
+Domain_SIS 1
+Domain_SIS 2
+Domain_LysM 1
+Domain_MaoC-like
+Domain_R3H
+Domain_SPR
+Domain_CMP/dCMP-type deaminase 1
+Domain_Beta/gamma crystallin 'Greek key' 3
+Domain_Beta/gamma crystallin 'Greek key' 2
+Domain_Beta/gamma crystallin 'Greek key' 4
+Domain_CMP/dCMP-type deaminase 2
+Domain_GH11
+Domain_Beta/gamma crystallin 'Greek key' 1
+Domain_CNH
+Domain_Doublecortin 2
+Domain_Doublecortin 1
+Domain_PABS
+Domain_HTH luxR-type
+Domain_KARI N-terminal Rossmann
+Domain_Grh/CP2 DB
+Domain_EF-hand 6
+Domain_MtN3/slv 2
+Domain_MtN3/slv 1
+Domain_Laminin EGF-like 3
+Domain_SCP2
+Domain_HTH cro/C1-type
+Domain_CRIM
+Domain_BAG
+Domain_Sushi 7
+Domain_Fibronectin type-II 3
+Domain_CIDE-N
+Domain_Cytochrome b561
+Domain_Fibronectin type-III 5
+Domain_MRG
+Domain_DOMON
+Domain_GAE
+Domain_BRO1
+Domain_Topo IA-type catalytic
+Domain_DOG1
+Domain_Rhodanese 1
+Domain_Rhodanese 2
+Domain_G protein gamma
+Domain_Runt
+Domain_PADR1 zinc-binding
+Domain_POU-specific atypical
+Domain_C2 PI3K-type
+Domain_SAM 1
+Domain_Nop
+Domain_IMD
+Domain_HNF-p1
+Domain_PQ-loop 2
+Domain_t-SNARE coiled-coil homology 1
+Domain_TH1
+Domain_ADD
+Domain_SAM 2
+Domain_KID
+Domain_KH type-2
+Domain_t-SNARE coiled-coil homology 2
+Domain_PQ-loop 1
+Domain_VWFA 2
+Domain_BEN
+Domain_SAM-dependent MTase TRM10-type
+Domain_Methyl-accepting transducer
+Domain_A to I editase
+Domain_FHA-like
+Domain_IRG-type G
+Domain_Peptidase M2
+Domain_DRBM 3
+Domain_Biotin carboxylation
+Domain_DFDF
+Domain_OCEL
+Domain_SAC
+Domain_ERV/ALR sulfhydryl oxidase
+Domain_MsrB
+Domain_VWFA 1
+Domain_PDZ 4
+Domain_SH3 4
+Domain_SSD
+Domain_ABM
+Domain_AH
+Domain_HMA 2
+Domain_REM-1 2
+Domain_REM-1 1
+Domain_Follistatin-like 2
+Domain_HotDog ACOT-type 2
+Domain_HotDog ACOT-type 1
+Domain_KEN
+Domain_Chromo 2
+Domain_Topo IB-type catalytic
+Domain_Cbl-PTB
+Domain_HMA 1
+Domain_STI1
+Domain_SIN1-type PH
+Domain_Follistatin-like 1
+Domain_CUB 3
+Domain_DhaL
+Domain_TBDR beta-barrel
+Domain_Ig-like 4
+Domain_ARID
+Domain_WHEP-TRS
+Domain_Ras-GAP
+Domain_SMP-LTD
+Domain_ZAD
+Domain_Obg
+Domain_Collectrin-like
+Domain_C-CAP/cofactor C-like
+Domain_TSP C-terminal
+Domain_TR mART core
+Domain_SLD
+Domain_YEATS
+Domain_COMM
+Domain_Sox C-terminal
+Domain_PKD
+Domain_WW 4
+Domain_Jacalin-type lectin
+Domain_B12-binding
+Domain_Miro 1
+Domain_Miro 2
+Domain_DUSP
+Domain_VOC
+Domain_SF4 helicase
+Domain_SANT 2
+Domain_Sushi 8
+Domain_CCT
+Domain_TBDR plug
+Domain_ATP-cone
+Domain_Fibronectin type-I
+Domain_Chromo 1
+Domain_DCUN1
+Domain_HTH myb-type 3
+Domain_SEP
+Domain_YjeF N-terminal
+Domain_TAFH
+Domain_CAP-Gly
+Domain_SANT 1
 Domain_any
 Region_Disordered
+Region_Leucine-zipper
+Region_Basic motif
+Region_Interaction with DNA
+Region_G3 motif
+Region_G4 motif
+Region_G1 motif
+Region_Calmodulin-binding
+Region_Linker
+Region_G2 motif
+Region_G5 motif
+Region_DNA-binding
+Region_Head
+Region_Tail
+Region_Coil 1A
+Region_Linker 1
+Region_Coil 1B
+Region_Coil 2
 Region_Connecting peptide
-Region_Alpha-2
+Region_Linker 12
+Region_Hinge
+Region_Autoinhibitory domain
+Region_Modulating
+Region_Catalytic
 Region_Alpha-1
+Region_Alpha-2
+Region_Activation loop
+Region_Dimerization
+Region_Catalytic subdomain A
+Region_Catalytic subdomain B
 Region_Alpha-3
+Region_Heparin-binding
+Region_G2
+Region_3-hydroxyacyl-CoA dehydrogenase
+Region_G5
+Region_G4
+Region_G3
+Region_G1
+Region_LID
+Region_Involved in dimerization
+Region_RNA-binding
+Region_Actin-binding
+Region_EIF4G-binding
+Region_Enoyl-CoA hydratase/isomerase
+Region_NMP
+Region_Interdomain linker
+Region_Helix-loop-helix motif
+Region_Histone deacetylase
+Region_Required for nuclear localization
+Region_C-terminal domain
+Region_Self-association
+Region_Linker 2
+Region_B
+Region_Homodimerization
+Region_A
+Region_Interaction with guide RNA
+Region_Oligomerization
+Region_Interacts with SPRY1, SPRY2, SPRY3 and SPRY4
+Region_LDL and other lipoprotein receptors binding
+Region_Interaction with CALM
+Region_Interaction with NR3C1
+Region_Specificity for association with VLDL
+Region_Interaction with calmodulin
+Region_10 X approximate tandem repeats
+Region_Important for dimerization
+Region_Transactivation domain
+Region_Lipid-binding and lipoprotein association
+Region_Homooligomerization
+Region_N-terminal domain
+Region_C
+Region_8 X 22 AA approximate tandem repeats
+Region_Selectivity filter 2
+Region_GPS
+Region_Chemokine binding
+Region_Selectivity filter 1
+Region_Domain III
+Region_RNA-binding RGG-box
+Region_N-terminal
+Region_Globular
+Region_IgE-binding
+Region_TRIAD supradomain
+Region_Involved in metalloproteinase-binding
+Region_Important for cleavage of target proteins
+Region_4 X approximate repeats
+Region_Phosphatase sequence motif III
+Region_PAI subdomain
+Region_N-terminal catalytic PFK domain 1
+Region_Phosphatase sequence motif II
+Region_Phosphatase sequence motif I
+Region_C-terminal regulatory PFK domain 2
+Region_RED subdomain
+Region_Hexokinase large subdomain
+Region_Hexokinase small subdomain
+Region_Required for interaction with GABARAP and for autophagy
+Region_G-loop
+Region_Catalytic loop
+Region_N-domain
+Region_Required for homodimerization
+Region_D
+Region_Domain IV
+Region_S4-S5 linker
+Region_Interaction with target DNA
+Region_Interaction with tRNA
+Region_Interaction with E4F1
+Region_Nucleotide-binding domain (NBD)
+Region_Substrate-binding domain (SBD)
+Region_Laminin-binding
+Region_Interaction with HIPK2
+Region_Required for transcriptional activation
+Region_Legume-lectin like
+Region_Membrane-binding amphipathic helix
+Region_Interaction with USP7
+Region_Phospholipid binding
+Region_Framework-3
+Region_Complementarity-determining-2
+Region_Framework-2
+Region_Complementarity-determining-1
+Region_Framework-1
+Region_Flexible linker
+Region_RNA binding
+Region_CX3CL1-binding
+Region_Important for transport activity
+Region_Triple-helical region
+Region_Required for maintaining the overall integrity of the AHR:ARNT heterodimer and its transcriptional activity
+Region_Leucine-zipper 1
+Region_Required for homooligomerization
+Region_Leucine-zipper 2
+Region_Interaction with CCAR2
+Region_Complementarity-determining-3
+Region_Transcription activation
+Region_O-glycosylated at one site
+Region_Dimerization and phosphorylation
+Region_Interaction with ubiquitin
+Region_Transcription activation (acidic)
+Region_Selectivity filter
+Region_Hydrophilic
+Region_Coil 2A
+Region_Coil 2B
+Region_Substrate binding
+Region_Lysyl-oxidase like
+Region_Interaction with GPIHBP1
+Region_Nuclear localization signal
+Region_C-linker
+Region_Important for interaction with membranes
+Region_Spacer
+Region_Necessary for nuclear localization
+Region_Regulatory N-terminal domain
+Region_Alpha
+Region_Beta
+Region_Interaction with NR1D1
+Region_Interaction with HIPK3
+Region_SNAG domain
+Region_SBD1
+Region_Interaction with CAVIN3
+Region_Basic (repression of DNA-binding)
+Region_Required for interaction with FBXO42
+Region_Interacts with SPRY1, SPRY2, and SPRY4
+Region_Cyclic nucleotide-binding domain
+Region_Ion conduction pathway
+Region_SBD2
+Region_Serine protease
+Region_Polyphosphoinositide (PIP2)-binding
+Region_Interaction with PLN
+Region_I-domain
+Region_Switch-II
+Region_Switch-I
+Region_Necessary for interaction with single-stranded DNA at the 3'-end of the G4-DNA structure
+Region_Hydrophobic repeat HR-A/B
+Region_AF-2
+Region_Beta-1
+Region_Required for interaction with microtubules
+Region_Required for interaction with ZNF385A
+Region_Interaction with 5' end of substrate DNA
+Region_immunoglobulin-like
+Region_Interaction with WWOX
+Region_Beta-2
+Region_Linker region
+Region_Interaction with AXIN1
+Region_Interaction with substrate tRNA
+Region_PPI
+Region_Substrate-binding (SBD)
+Region_Stachel
+Region_Part of a helix bundle domain, formed by helices from N-terminal and C-terminal regions
+Region_Repressor domain
+Region_START-like
+Region_Interaction with the F-box domain of F-box proteins
+Region_3 X approximate repeats
+Region_CuBD subdomain
+Region_Repeat 1
+Region_Repeat 2
+Region_Interaction with HIPK1
+Region_Chemokine binding, important for signaling
+Region_Important for chemokine binding and signaling
+Region_CaM-binding
+Region_Interaction with STAMBP
+Region_VHIID
+Region_GFLD subdomain
+Region_Leucine repeat I (LRI)
+Region_Leucine repeat II (LRII)
+Region_Interaction with GRB2, ERI3 and SYN1
+Region_SAW
+Region_PFYRE
+Region_Nucleotide-binding (NBD)
+Region_Interactions with TJP1, TJP2 and TJP3
+Region_Interaction with NDEL1
+Region_Important for membrane-damaging activities in eukaryotes and bacteria
+Region_Collagen-binding
+Region_GTPase domain (Globular)
+Region_Interaction with auxin-responsive proteins
+Region_Necessary for transcriptional repression
+Region_Interaction with DNA substrate
+Region_Isodityrosine cross-linking
+Region_Catalytic domain
+Region_Interaction with RNA
+Region_Sigma-70 factor domain-4
+Region_Sigma-70 factor domain-2
+Region_Interaction with UBE2M N-terminus
+Region_Transactivation AF-2
+Region_Interaction with VCL
+Region_Stalk region
+Region_Small GTPase-like
+Region_5 X 8 AA tandem repeats of P-H-G-G-G-W-G-Q
+Region_Transactivation domain (TAC)
+Region_Transactivation
+Region_Important for interaction with target DNA
+Region_Dimerization (DIM)
+Region_Transactivation domain (TAM)
+Region_Interaction with CLOCK
+Region_Interaction with dsRNA
+Region_Required for localization to punctate cytoplasmic foci
+Region_Interaction with GSK3B
+Region_Required for insertion into the membrane
+Region_CH1
+Region_Reductase
+Region_Interaction with RANBP9
+Region_6-phosphofructo-2-kinase
+Region_Fructose-2,6-bisphosphatase
+Region_SBD
+Region_Interaction with AKAP13
+Region_Hydrophobic
+Region_Essential for determining substrate specificity
+Region_EIF4EBP1/2/3 binding
+Region_Interaction with PPIB
+Region_Thiamine pyrophosphate binding
+Region_Interacts with target acceptor peptide in protein substrate
+Region_Interaction with TRAF6
+Region_Microtubule-binding
+Region_Interaction with TESC
+Region_Required for galactolipase activity
+Region_PI(4,5)P2-binding region
+Region_Interaction with PPP3CA
+Region_Interaction with KAT7
+Region_C-terminal
+Region_N-acetyltransferase
+Region_Endothelin-like
+Region_Required for formation of a 5-methylcytosine-binding pocket
+Region_Histone H3R2me0 binding
+Region_Interaction with PEX19
+Region_Required for DNA-binding
+Region_Interaction with TGFB1I1
+Region_Hexokinase small subdomain 1
+Region_Hexokinase large subdomain 1
+Region_Hexokinase small subdomain 2
+Region_Hexokinase large subdomain 2
+Region_Important for receptor binding
+Region_Important for interaction with long-chain fatty acids
+Region_Part of the peptide-binding site
+Region_Clustered O-linked oligosaccharides
+Region_Precorrin-2 dehydrogenase /sirohydrochlorin ferrochelatase
+Region_Tetramerization domain
+Region_Ser-Xaa-Pro motif, crucial for potent interaction with nAChR
+Region_D domain
+Region_Protease
+Region_VCP/p97-interacting motif (VIM)
+Region_Necessary for interaction with USP2
+Region_Uroporphyrinogen-III C-methyltransferase
+Region_Transpeptidase
+Region_Phosphodiesterase
+Region_Putative calmodulin-binding region
+Region_C-terminal transmembrane transporter domain
+Region_Interaction with CRY1
+Region_Substrate
+Region_Necessary for interaction with HNRNPK
+Region_GTPase-binding
+Region_Histone H3K4me3 and H3R8me2a binding
+Region_Interaction with PCNA
+Region_Atypical EGF-like
+Region_Interface
+Region_Aspartokinase
+Region_Autoregulatory region
+Region_Pyrophosphorylase
+Region_Cysteine motif
+Region_SHR-binding
+Region_Interaction with WARS1
+Region_Interaction with TP53
+Region_Mitochondrial-binding peptide (MBP)
+Region_Zinc ribbon
+Region_Sufficient for interaction with microtubules and microtubule severing
+Region_NTAD
+Region_Acceptor-binding
+Region_Required for complex formation with BFSP1 and BFSP2
+Region_Middle domain
+Region_Interaction with CCAR1
+Region_Interaction with KCND2
+Region_Interaction with GW182 family members
+Region_Interaction with CDK2
+Region_Important for homodimerization
+Region_K/R-ring
+Region_Interaction with TANK
+Region_Interaction with DPF motifs-containing proteins
+Region_Interaction with substrate RNA
+Region_Required for nuclear export
+Region_Interaction with DYNLT1
+Region_Autoinhibitory segment
+Region_Homeobox-like
+Region_Activation segment
+Region_Interaction with CENPF
+Region_Interaction with ZNF318
+Region_Necessary for RNA-binding
+Region_Interaction with LPXN
+Region_Regulatory domain
+Region_Important for autoinhibitory function
+Region_Transglycosylase
+Region_E
+Region_Homoserine dehydrogenase
+Region_Bowtie tail
+Region_EVH2
+Region_C-domain
+Region_Intramolecular interaction with C-terminus
+Region_Interaction with NFS1
+Region_EVH2 block B
+Region_EVH2 block A
+Region_Intramolecular interaction with N-terminus
+Region_Ubiquitin-binding domain (UBD)
+Region_Required for interaction with EZR, MSN and RDX and for co-localization to microvilli
+Region_Interaction with SIRT1
+Region_Interaction with ITGB1BP1
+Region_Arm domain
+Region_Cyclic dinucleotide-binding domain (CBD)
+Region_3HB (three-helix bundle) domain
+Region_EVH2 block C
+Region_Straightjacket domain
+Region_Metalloprotease
+Region_Repeat-rich region
+Region_P-domain
+Region_Interaction with SQSTM1
+Region_2 X approximate tandem repeats
+Region_EF-hand-like
+Region_NLS binding site (major)
+Region_4H
+Region_NLS binding site (minor)
+Region_Important for interaction with lipoprotein particles
+Region_Mediates recruitment to ER membranes
+Region_Second lumenal domain
+Region_First lumenal domain
+Region_SH2-like
+Region_RCL
+Region_Interaction with NOV
+Region_Interaction with DDX5
+Region_Mitochondrial targeting signal
+Region_Interaction with RB1
+Region_Interaction with UBQLN4
+Region_Acidic
+Region_Important for heparin binding
+Region_Gating release of inhibition by proteolysis (GRIP)
+Region_Chondroitin sulfate binding
+Region_Hydrophobic repeat HR-C
+Region_Essential for interaction with SGTA and TTC1
+Region_Required for mitochondrial localization
+Region_CH2
+Region_Required for localization in the endoplasmic reticulum
+Region_Interaction with CDKN1A
+Region_Interaction with microtubules
+Region_Interaction with POLR2A
+Region_PQA
+Region_Leucine-rich repeat receptor-like protein kinase binding
+Region_Involved in binding clathrin heavy chain
+Region_Flexible loop
+Region_Mediates interaction with DNTTIP2
+Region_N-terminal hypervariable region (HVR)
+Region_Cation selection
+Region_Fusion peptide
+Region_Amphipathic helix 1 (AH1)
+Region_Interaction with TMEM182
+Region_Nuclear localization signal (NLS)
+Region_Important for agonist binding
+Region_Lipid binding
+Region_Important for degradation of atrial natriuretic peptide by IDE
+Region_Interaction with RAC1
+Region_Extracellular domain (ECD)
+Region_Loop L1
+Region_C-terminal assembly domain (tetramerization)
+Region_Interaction with the K-D-E-L motif on target proteins
+Region_Required for interaction with STX17
+Region_Interaction with DAB2
+Region_Region II
+Region_H-S-H (helix-span-helix), dimerization
+Region_Necessary for localization of ARE-containing mRNAs to processing bodies (PBs)
+Region_Paddle region
+Region_Interaction with NBN
+Region_Linear diubiquitin binding
+Region_J domain
+Region_ACP-binding
+Region_Interaction with KCNIP1
+Region_Interaction with FLCN and FNIP1
+Region_Pore-forming motif
+Region_Essential for interaction with SMYD3, TSC1 and STIP1/HOP
+Region_UBA-like
+Region_Autoinhibitory region
+Region_cGMP-binding, high affinity
+Region_PIF-pocket
+Region_Interaction with FNIP2 and TSC1
+Region_N-terminal arm
+Region_Calcineurin B binding
+Region_I
+Region_Interaction with METTL3
+Region_Amphipathic helix 4 (AH4)
+Region_Q domain
+Region_Nuclease-like domain
+Region_Ubiquitin binding
+Region_Membrane-anchoring
 Region_any
 Zinc finger_RING-type
+Zinc finger_C2H2-type 2
+Zinc finger_C2H2-type 1
+Zinc finger_C2H2-type 3
+Zinc finger_NR C4-type
+Zinc finger_C2H2-type 4
+Zinc finger_C2H2-type 5
+Zinc finger_C2H2-type 6
+Zinc finger_C2H2-type 7
+Zinc finger_C2H2-type 8
+Zinc finger_C2H2-type 9
+Zinc finger_C4-type
+Zinc finger_C2H2-type 10
+Zinc finger_B box-type
+Zinc finger_PHD-type
+Zinc finger_C2H2-type
+Zinc finger_C2H2-type 11
+Zinc finger_C2H2-type 12
+Zinc finger_Phorbol-ester/DAG-type
+Zinc finger_C3H1-type 1
+Zinc finger_C3H1-type 2
+Zinc finger_Phorbol-ester/DAG-type 1
+Zinc finger_Phorbol-ester/DAG-type 2
+Zinc finger_C2H2-type 13
+Zinc finger_FYVE-type
+Zinc finger_CCHC-type
+Zinc finger_UBP-type
+Zinc finger_RING-type 2
+Zinc finger_RING-type 1
+Zinc finger_RanBP2-type
+Zinc finger_C3H1-type
+Zinc finger_MYND-type
+Zinc finger_C2H2-type 14
+Zinc finger_ZZ-type
+Zinc finger_CCHC-type 2
+Zinc finger_B box-type 1
+Zinc finger_B box-type 2
+Zinc finger_GATA-type
+Zinc finger_C2H2-type 15
+Zinc finger_IBR-type
+Zinc finger_PHD-type 1
+Zinc finger_PHD-type 2
+Zinc finger_C3H1-type 3
+Zinc finger_C2HC MYST-type
+Zinc finger_CCHC-type 1
+Zinc finger_GATA-type 1
+Zinc finger_GATA-type 2
+Zinc finger_CR-type
+Zinc finger_SP-RING-type
+Zinc finger_C3H1-type 4
+Zinc finger_Matrin-type
+Zinc finger_C2H2-type 16
+Zinc finger_RING-CH-type
+Zinc finger_UBZ4-type
+Zinc finger_SIAH-type
+Zinc finger_TRAF-type 1
+Zinc finger_TRAF-type 2
+Zinc finger_C2HC pre-PHD-type
+Zinc finger_C2HC NPR-type
+Zinc finger_CW-type
+Zinc finger_CCHC NOA-type
+Zinc finger_C2H2-type 17
+Zinc finger_Btk-type
+Zinc finger_TFIIB-type
+Zinc finger_FPG-type
+Zinc finger_TFIIS-type
+Zinc finger_CCHC-type 3
+Zinc finger_Dof-type
+Zinc finger_PARP-type 2
+Zinc finger_PARP-type 1
+Zinc finger_THAP-type
+Zinc finger_C3H1-type 5
+Zinc finger_ZF-HD dimerization-type
+Zinc finger_A20-type
+Zinc finger_GRF-type
+Zinc finger_C5-type
 Zinc finger_any
 Motif_Nuclear localization signal
+Motif_PDZ-binding
+Motif_Nuclear export signal
+Motif_Microbody targeting signal
+Motif_Prevents secretion from ER
+Motif_Effector region
+Motif_Selectivity filter
+Motif_Cell attachment site
+Motif_Bipartite nuclear localization signal
+Motif_9aaTAD
+Motif_Q motif
+Motif_DEAD box
+Motif_Switch 2
+Motif_Switch 1
+Motif_SH3-binding
+Motif_Cysteine switch
+Motif_DDXXD motif
+Motif_Nudix box
+Motif_TXY
+Motif_DEAH box
+Motif_Nuclear localization signal 2
+Motif_Nuclear localization signal 1
+Motif_WSXWS motif
+Motif_HXXXXD motif
+Motif_Histidine box-2
+Motif_Histidine box-1
+Motif_Histidine box-3
+Motif_NPA 1
+Motif_NPA 2
+Motif_Box 1 motif
+Motif_BH3
+Motif_SH2-binding
+Motif_GXSXG
+Motif_Antp-type hexapeptide
+Motif_ITIM motif
+Motif_Nucleolar localization signal
+Motif_Arginine finger
+Motif_NPxxY motif
+Motif_DRY motif
+Motif_LIR
+Motif_LXXLL motif
+Motif_OAR
+Motif_Di-lysine motif
+Motif_'HIGH' region
+Motif_Nuclear localization signal (NLS)
+Motif_[IL]-x-C-x-x-[DE] motif
+Motif_Endocytosis signal
+Motif_JAMM motif
+Motif_'KMSKS' region
+Motif_Lys-Thr-X-X-X-Trp motif, mediates interaction with the PDZ domain of Dvl family members
+Motif_EAR-like (transcriptional repression)
+Motif_D/ECD-tripeptide
+Motif_PAL
+Motif_BH2
+Motif_BH1
+Motif_FFAT
+Motif_WRPW motif
+Motif_Histidine triad motif
+Motif_TPR repeat-binding
+Motif_PPxY motif
+Motif_Dileucine internalization motif
+Motif_Selectivity filter part_3
+Motif_Selectivity filter part_2
+Motif_Selectivity filter part_1
+Motif_ITIM motif 2
+Motif_ITIM motif 1
+Motif_Homodimerization
+Motif_DXD motif
+Motif_Important for signaling
+Motif_Nucleotide carrier signature motif
+Motif_UBR5-degron
+Motif_Nuclear export signal (NES)
+Motif_CXXC
+Motif_DGA/G
+Motif_PIP-box
+Motif_D-box
+Motif_Cx9C motif 1
+Motif_Cx9C motif 2
+Motif_Involved in the stabilization of the negatively charged intermediate by the formation of the oxyanion hole
+Motif_COPI vesicle coat-binding
+Motif_COPII vesicle coat-binding
+Motif_SIFI-degron
+Motif_[KR]-[STA]-K motif
+Motif_GXGXXG
+Motif_ATG16L1-binding motif
+Motif_DEF box
+Motif_Nuclear export signal 1
+Motif_PY motif
+Motif_G-site
+Motif_MREC motif
+Motif_MIT-interacting motif
+Motif_GAS motif
+Motif_Inhibitory (S/T)XXXE(G/N) motif
+Motif_KEN box
+Motif_LXXLL motif 1
+Motif_Nuclear export signal 2
+Motif_Polymerase core binding
+Motif_Lysosomal targeting motif
+Motif_LXXLL motif 2
+Motif_Gate loop
+Motif_BH4
+Motif_Latch loop
+Motif_Nuclear localization signal 3
+Motif_VHIID
+Motif_PY-motif
+Motif_FYXDWWN motif
+Motif_NPXY motif
+Motif_SUMO interaction motif 1 (SIM)
+Motif_ITIM motif 3
+Motif_DEVH box
+Motif_Di-leucine internalization motif
+Motif_PPxY motif 2
+Motif_Proline-rich sequence
+Motif_Di-leucine motif
+Motif_D-box 1
+Motif_D-box 2
+Motif_Basolateral sorting signal
+Motif_PPxY motif 1
+Motif_Secondary area of contact
+Motif_ESA1-RPD3 motif
+Motif_pLxIS motif
+Motif_DXD motif 1
+Motif_EAR
+Motif_WWDYG motif
+Motif_'Ionic lock' involved in activated form stabilization
+Motif_MREI motif
+Motif_DXD motif 2
+Motif_DEGH box
+Motif_Pseudophosphorylation motif
+Motif_[DE]-X(1,2)-F-X-X-[FL]-X-X-X-R motif
+Motif_LPXTG sorting signal
+Motif_WxxxF/Y motif 2
+Motif_XEXPHE-motif
+Motif_DWD box
+Motif_WxxxF/Y motif 1
+Motif_PP1-binding motif
+Motif_FRIP motif
+Motif_9aaTAD 2
+Motif_YENPXY motif
+Motif_Bipartite nuclear localization signal 2
+Motif_DECD box
+Motif_9aaTAD 1
+Motif_Bipartite nuclear localization signal 1
+Motif_TOS motif
+Motif_ITSM 2
+Motif_Nuclear localization signal 4
+Motif_9aaTAD 3
+Motif_HxxHH motif
+Motif_LIR motif
+Motif_LxCxE motif
+Motif_Peroxisomal targeting signal
+Motif_LD motif 2
+Motif_SAPNY motif
+Motif_STAR
+Motif_LIR 1
+Motif_Jas
+Motif_LD motif 3
+Motif_LIR 2
+Motif_LD motif 1
+Motif_L/FRRG motif
+Motif_SxS motif essential for MIK2 binding
+Motif_YXXXXLphi motif
+Motif_DELLA motif
+Motif_TRAF6-binding
+Motif_J domain autoinhibitory motif
+Motif_ITSM 1
+Motif_SVSE motif
+Motif_[ST]-Q motif
+Motif_TonB C-terminal box
+Motif_SH3-binding 2
+Motif_PxVxL motif
+Motif_SH3-binding 1
+Motif_POU-IV box
+Motif_ITIM motif 4
+Motif_Endoplasmic reticulum retention signal
+Motif_KLKR
+Motif_DK motif
+Motif_Subunit association domain (SAD)
+Motif_WxxxF/Y motif 3
 Motif_any
-Signal peptide_21
-Signal peptide_2
-Signal peptide_24
-Signal peptide_19
-Signal peptide_18
 Signal peptide_20
+Signal peptide_19
+Signal peptide_21
+Signal peptide_18
+Signal peptide_24
 Signal peptide_23
-Signal peptide_17
 Signal peptide_22
+Signal peptide_25
+Signal peptide_26
+Signal peptide_17
+Signal peptide_27
+Signal peptide_16
+Signal peptide_2
+Signal peptide_28
+Signal peptide_29
+Signal peptide_31
+Signal peptide_30
+Signal peptide_32
+Signal peptide_1
+Signal peptide_15
+Signal peptide_33
+Signal peptide_34
+Signal peptide_35
+Signal peptide_Tat-type signal
+Signal peptide_37
+Signal peptide_?
+Signal peptide_3
+Signal peptide_39
+Signal peptide_36
+Signal peptide_41
+Signal peptide_14
+Signal peptide_40
+Signal peptide_38
+Signal peptide_42
+Signal peptide_44
+Signal peptide_Not cleaved
+Signal peptide_13
+Signal peptide_45
+Signal peptide_43
+Signal peptide_46
+Signal peptide_48
+Signal peptide_47
 Signal peptide_any
 Turn
 Helix
