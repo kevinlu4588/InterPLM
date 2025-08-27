@@ -12,6 +12,14 @@ import pandas as pd
 import streamlit as st
 from tap import Tap
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv not installed, skip loading .env file
+    pass
+
 from interplm.dashboard.colors import get_structure_palette_and_colormap
 from interplm.dashboard.data_loader import DataLoader, get_data_loader
 from interplm.dashboard.feature_activation_vis import (
