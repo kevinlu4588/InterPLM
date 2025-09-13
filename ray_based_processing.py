@@ -8,6 +8,7 @@ from interplm.sae.inference import load_sae_from_hf
 from utils import extract_sae_features, extract_esm_features_batch
 from utils import _batched, _normalize_1d
 import numpy as np
+from tqdm import tqdm
 #Make sure compute_activated_positions_for_feature uses *passed-in* model/tokenizer/sae
 #Not globals, so we use this tiny wrapped to inject from the ray Actor
 
@@ -84,16 +85,19 @@ def _compute_activated_positions_for_feature_wrapped(
 
     ## Ray actor
 
-@ray.remote(num_gpus=1)
-class SAEInferenceWorker:
-    def __init__(
-        self,
-        *,
-        plm_model_hf: str = "facebook/esm2_t33_650M_UR50D",  # <-- fixed
-        sae_plm_model_key: str = "esm2-650m",
-        plm_layer: int = 24,
-        amp_dtype: str = "fp16",
-    ):
+
+MICRO_BATCH = 64
+
+def chunk(lst, n):
+    for i in range(0, len(lst), n):
+        yield lst[i:i+n]
+
+@ray.remote(num_gpus=1, num_cpus=0)
+class SAEInferenceWorker(SAEInferenceWorker):  # reuse your class
+    def process_many(self, items):  # items: List[tuple[fid, seqs]]
+        out = {}
+        for fid, seqs in items:
+            cols = self.process_feature.remote  # wrong scope if we call .remote()
         os.environ.setdefault(
             "PYTORCH_CUDA_ALLOC_CONF",
             "expandable_segments:True,max_split_size_mb:128"
@@ -178,52 +182,69 @@ def run_with_ray_over_features(
     max_per_feature: Optional = None,
     amp_dtype: str = "fp16",   # or "bf16" or "fp32"
 ) -> Dict[int, pd.DataFrame]:
-    """
-    Scheduels one remote call per feature id, routed across a pool of persistent GPU actors, updates and returns feature_datasets in-place
-    """
-
     ray.init(ignore_reinit_error=True)
+    n_gpus = int(ray.available_resources().get("GPU", 0))
+    num_workers = min(num_workers, n_gpus)
 
-    #Spin up actor pool(one per GPU)
-    workers = [
-        SAEInferenceWorker.remote(plm_model_hf="facebook/esm2_t33_650M_UR50D",
+    workers = [SAEInferenceWorkerPooled.remote(
+        plm_model_hf="facebook/esm2_t33_650M_UR50D",
         sae_plm_model_key="esm2-650m",
         plm_layer=plm_layer,
-        amp_dtype = amp_dtype)
-        for _ in range(num_workers)
-    ]
+        amp_dtype=amp_dtype,
+    ) for _ in range(num_workers)]
 
-    #dispath tasks (round_robin across actors)
     fids = list(feature_datasets.keys())
-    pending = []
-    for i, fid in enumerate(fids):
-        worker = workers[i % num_workers]
-        work = feature_datasets[fid]
-        if "Sequence" not in work.columns:
-            raise KeyError("Expected a 'Sequence' column in the merged annotations")
-        seqs = work["Sequence"].astype(str).fillna("").tolist()
+    # build micro-batches as (fid, seqs)
+    items = [(fid, feature_datasets[fid]["Sequence"].astype(str).fillna("").tolist())
+             for fid in fids]
+    batches = list(chunk(items, MICRO_BATCH))
 
-        fut = worker.process_feature.remote(
-            fid, seqs, batch_size=batch_size,
-            norm_mode = norm_mode,
-            top_k = top_k,
+    # submit with backpressure
+    max_in_flight = max(1, 2 * num_workers)
+    in_flight = {}
+    submit_idx = 0
+    total_fids = len(fids)
+    pbar = tqdm(total=total_fids, desc="Processing features")
+
+    def submit(batch_idx):
+        w = workers[batch_idx % num_workers]
+        fut = w.process_many.remote(
+            batches[batch_idx],
+            batch_size=batch_size,
+            norm_mode=norm_mode,
+            top_k=top_k,
             min_act=min_act,
-            max_per_feature = max_per_feature
+            max_per_feature=max_per_feature,
         )
-        pending.append((fid, fut))
-           # gather and merge back
-    for fid, fut in pending:
-        cols = ray.get(fut)
-        work = feature_datasets[fid].copy()
-        work["activated_indices"] = cols["activated_indices"]
-        work["activated_aas"] = cols["activated_aas"]
-        work["seq_max_activation_norm"] = cols["seq_max_activation_norm"]
-        work["seq_raw_activation"] = cols["seq_raw_activation"]
-        work["activated_indices_str"] = cols["activated_indices_str"]
-        work["activated_aas_str"] = cols["activated_aas_str"]
-        work["seq_max_activation_norm_str"] = cols["seq_max_activation_norm_str"]
-        feature_datasets[fid] = work  # update in-place
+        in_flight[batch_idx] = fut
 
+    while submit_idx < len(batches) and len(in_flight) < max_in_flight:
+        submit(submit_idx); submit_idx += 1
+
+    while in_flight:
+        done, _ = ray.wait(list(in_flight.values()), num_returns=1)
+        fut = done[0]
+        # find which batch finished
+        bidx = next(k for k,v in in_flight.items() if v == fut)
+        del in_flight[bidx]
+
+        results = ray.get(fut)  # Dict[fid -> cols]
+        for fid, cols in results.items():
+            work = feature_datasets[fid].copy()
+            work["activated_indices"] = cols["activated_indices"]
+            work["activated_aas"] = cols["activated_aas"]
+            work["seq_max_activation_norm"] = cols["seq_max_activation_norm"]
+            work["seq_raw_activation"] = cols["seq_raw_activation"]
+            work["activated_indices_str"] = cols["activated_indices_str"]
+            work["activated_aas_str"] = cols["activated_aas_str"]
+            work["seq_max_activation_norm_str"] = cols["seq_max_activation_norm_str"]
+            feature_datasets[fid] = work
+        pbar.update(len(results))  # advance by number of FIDs completed
+
+        if submit_idx < len(batches):
+            submit(submit_idx); submit_idx += 1
+
+    pbar.close()
     ray.shutdown()
     return feature_datasets
 
