@@ -2,7 +2,7 @@ from interplm.sae.inference import load_sae_from_hf
 
 from transformers import AutoTokenizer, AutoModel
 import torch
-from typing import List, Literal, Tuple
+from typing import List, Literal, Tuple, Optional
 from pathlib import Path
 import pandas as pd, torch, os, gc
 from interplm.sae.inference import load_sae_from_hf
@@ -148,3 +148,43 @@ def extract_esm_features_batch(
         else:
             raise ValueError(f"Invalid layer_sel: {layer_sel}")
     return token_reps, attn_mask
+
+
+def _batched(iterable, n):
+    """Yield Successive n-sized chunks from iterable
+    """
+    it = list(iterable)
+    for i in range(0, len(it), n):
+        yield it[i:i+n]
+
+
+def _normalize_1d(
+    x: np.ndarray,
+    mode: Literal["seq_max","feature_global_max","zscore","none"] = "seq_max",
+    global_max: Optional[float] = None,
+    eps: float = 1e-8
+) -> np.ndarray:
+    """
+    Normalize a 1D activation vector x (valid positions only).
+    """
+    if mode == "none":
+        return x.copy()
+
+    if mode == "feature_global_max":
+        if global_max is None or global_max <= eps:
+            # fallback to seq_max if global not available/safe
+            mode = "seq_max"
+        else:
+            return x / (global_max + eps)
+
+    if mode == "seq_max":
+        m = np.max(x) if x.size else 0.0
+        return x / (m + eps)
+
+    if mode == "zscore":
+        mu = float(np.mean(x)) if x.size else 0.0
+        sd = float(np.std(x)) if x.size else 0.0
+        return (x - mu) / (sd + eps)
+
+    # Fallback (shouldn't hit)
+    return x.copy()
