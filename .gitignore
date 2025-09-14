@@ -191,3 +191,9 @@ cython_debug/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+*.pkl
+*.lock
+*.jinja
+*.safetensors
+*.txt
+esm_sae_results
