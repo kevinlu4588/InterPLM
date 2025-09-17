@@ -1,6 +1,15 @@
 from interplm.sae.inference import load_sae_from_hf
-
+import os, json, gzip, math, time, random
+from pathlib import Path
+from typing import List, Tuple, Iterable, Optional
 from transformers import AutoTokenizer, AutoModel
+import os, gzip, math, random, json, gc
+from pathlib import Path
+from typing import List, Iterable, Tuple, Dict
+import torch
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+from Bio import SeqIO
 import torch
 from typing import List, Literal, Tuple, Optional
 from pathlib import Path
@@ -13,11 +22,57 @@ from interplm.sae.inference import load_sae_from_hf
 from sklearn.metrics import roc_auc_score, precision_recall_curve, roc_curve
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
-
+import random
 DEVICE="cuda"
 DTYPE  = torch.float16
 MAX_LEN=1024
 BATCH_SIZE_SEQ=128
+DATASET_NAME = "uniprot_sprot"
+ESM_NAME = "facebook/esm2_t33_650M_UR50D"
+MAX_LEN = 1024
+SEED = 17
+random.seed(SEED)
+BATCH_SIZE_SEQ = 128
+
+FASTA_GZ = Path("/home/ec2-user/SageMaker/InterPLM/data/uniprot/uniprot_sprot.fasta.gz")
+OUT_DIR  = Path(f"/home/ec2-user/SageMaker/InterPLM/data/esm2_hidden_states/{DATASET_NAME}")
+MAX_BATCHES=24
+
+
+def write_json(path: Path, obj: dict):
+    ensure_dir(path.parent)
+    with open(path, "w") as fh:
+        json.dump(obj, fh, indent=2)
+
+def ensure_dir(p: Path): p.mkdir(parents=True, exist_ok=True)
+def save_batch_shards(hs, attn_mask, out_dir: Path, batch_idx: int):
+    L, B, T, D = hs.shape
+    # mask shard (for this batch)
+    mask_path = out_dir / "masks" / f"batch_{batch_idx:05d}.pt"
+    if not mask_path.exists():
+        ensure_dir(mask_path.parent)
+        seq_lens = attn_mask.sum(dim=1).to(torch.int32).cpu()
+        torch.save(
+            {"attn_mask": attn_mask.cpu(),
+             "seq_lengths": seq_lens,
+             "batch_size": int(B),
+             "tokens": int(T),
+             "batch_index": int(batch_idx)},
+            mask_path,
+        )
+    # layer shards
+    for l in range(L):
+        layer_dir = out_dir / f"layer_{l:02d}"
+        ensure_dir(layer_dir)
+        shard_path = layer_dir / f"batch_{batch_idx:05d}.pt"
+        if shard_path.exists():
+            continue
+        torch.save(
+            {"hidden_states": hs[l].cpu(),  # [B, T, D]
+             "batch_size": int(B), "tokens": int(T), "width": int(D),
+             "layer": int(l), "batch_index": int(batch_idx)},
+            shard_path,
+        )
 
 def write_manifest(out_dir: Path, **kwargs):
     write_json(out_dir / "manifest.json", {
@@ -52,7 +107,16 @@ def iter_swissprot_sequences(fasta_gz: Path, max_len: int = MAX_LEN):
             if not seq:
                 continue
             yield rec.id, (seq if len(seq) <= max_len else seq[:max_len])
-
+def batched_sequences_from_iterator(sequences, batch_size):
+    """Create batches from an iterator of sequences"""
+    batch = []
+    for seq in sequences:
+        batch.append(seq)
+        if len(batch) == batch_size:
+            yield batch
+            batch = []
+    if batch:  # Don't forget the last partial batch
+        yield batch
 def batched_sequences(fasta_gz: Path, batch_size: int = BATCH_SIZE_SEQ):
     buf = []
     for _, seq in iter_swissprot_sequences(fasta_gz):

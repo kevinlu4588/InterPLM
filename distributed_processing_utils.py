@@ -7,7 +7,10 @@ import torch.distributed as dist
 from Bio import SeqIO
 from transformers import AutoTokenizer, AutoModel
 from tqdm.auto import tqdm
-
+from datetime import timedelta
+import os, gzip, math, random, json, gc
+from pathlib import Path
+from typing import List, Iterable, Tuple, Dict
 
 # ------------- Dist utils -------------
 def get_dist_info():
@@ -20,7 +23,7 @@ def get_dist_info():
 def dist_init():
     rank, world_size, local_rank = get_dist_info()
     if world_size > 1 and not dist.is_initialized():
-        dist.init_process_group(backend="nccl", timeout=torch.timedelta(seconds=1200))
+        dist.init_process_group(backend="nccl", timeout=timedelta(seconds=1200))
     return rank, world_size, local_rank
 
 def dist_barrier():
