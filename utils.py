@@ -13,16 +13,55 @@ from interplm.sae.inference import load_sae_from_hf
 from sklearn.metrics import roc_auc_score, precision_recall_curve, roc_curve
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
+
 DEVICE="cuda"
 DTYPE  = torch.float16
+MAX_LEN=1024
+BATCH_SIZE_SEQ=128
+
+def write_manifest(out_dir: Path, **kwargs):
+    write_json(out_dir / "manifest.json", {
+        "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        **kwargs,
+        "layout": {
+            "layers_folder": "layer_{:02d}",
+            "layer_shard": "batch_{:05d}.pt",
+            "masks_folder": "masks",
+            "mask_shard": "batch_{:05d}.pt",
+            "tensor_keys": {"hidden_states": "[B,T,D]", "attn_mask": "[B,T]"}
+        }
+    })
 
 
-DATA_DIR = Path("esm_sae_results"); DATA_DIR.mkdir(exist_ok=True)
-SEQUENCES_DIR = Path("/home/ec2-user/SageMaker/InterPLM/data/uniprot/subset_40k.csv")
-# ANNOTATIONS_DIR = Path("uniprotkb_swissprot_annotations.tsv.gz")
-ANNOTATIONS_DIR = Path("/home/ec2-user/SageMaker/InterPLM/uniprotkb_swissprot_annotations.tsv.gz")
+# ------------- Count sequences once (for progress/manifest) -------------
+def count_sequences(fasta_gz: Path) -> int:
+    with gzip.open(fasta_gz, "rt") as fh:
+        return sum(1 for _ in SeqIO.parse(fh, "fasta"))
+
+# ------------- Model & extract (mostly same) -------------
+def build_model_and_tokenizer(device, esm_name=ESM_NAME):
+    tokenizer = AutoTokenizer.from_pretrained(esm_name, do_lower_case=False)
+    model = AutoModel.from_pretrained(esm_name).eval().to(device)
+    return model, tokenizer
 
 
+def iter_swissprot_sequences(fasta_gz: Path, max_len: int = MAX_LEN):
+    with gzip.open(fasta_gz, "rt") as fh:
+        for rec in SeqIO.parse(fh, "fasta"):
+            seq = str(rec.seq)
+            if not seq:
+                continue
+            yield rec.id, (seq if len(seq) <= max_len else seq[:max_len])
+
+def batched_sequences(fasta_gz: Path, batch_size: int = BATCH_SIZE_SEQ):
+    buf = []
+    for _, seq in iter_swissprot_sequences(fasta_gz):
+        buf.append(seq)
+        if len(buf) == batch_size:
+            yield buf
+            buf = []
+    if buf:
+        yield buf
 
 
 @torch.no_grad()
@@ -148,6 +187,26 @@ def extract_esm_features_batch(
         else:
             raise ValueError(f"Invalid layer_sel: {layer_sel}")
     return token_reps, attn_mask
+
+
+@torch.no_grad()
+def extract_esm_features_batch_layer_all(
+    sequences: List[str],
+    device: torch.device = DEVICE,
+    dtype = torch.float16,
+    model = None,
+    tokenizer = None,
+) -> Tuple[torch.Tensor, torch.Tensor]:
+    batch = tokenizer(sequences, return_tensors="pt", add_special_tokens=False, padding=True)
+    batch = {k: v.to(device) for k, v in batch.items()}
+    attn_mask = batch["attention_mask"].to(torch.bool)
+
+    with torch.autocast(device_type="cuda", dtype=dtype):
+        out = model(**batch, output_hidden_states=True, return_dict=True)
+        # hs = out.hidden_states  # tuple: [emb, layer1, ..., layerN] each [B,L,d]
+        #stack hidden states -> [Lyaer, B, L, D]
+        hs = torch.stack(out.hidden_states, dim=0)
+    return hs, attn_mask #[Layer, B, L, D]
 
 
 def _batched(iterable, n):
