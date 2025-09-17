@@ -1,3 +1,59 @@
+"""
+Distributed multi-GPU training script for SAE on protein sequences.
+Launch with: torchrun --nproc_per_node=8 distributed_train_sae.py
+"""
+
+import os
+import math, random
+from pathlib import Path
+from typing import Iterable, List, Tuple, Optional
+import argparse
+import json
+from datetime import datetime
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.distributed as dist
+from torch.nn.parallel import DistributedDataParallel as DDP
+from torch.utils.data.distributed import DistributedSampler
+from transformers import AutoTokenizer, AutoModel
+from Bio import SeqIO
+
+# ---------------- Distributed Setup ----------------
+def setup_distributed():
+    """Initialize distributed training environment."""
+    if 'RANK' in os.environ and 'WORLD_SIZE' in os.environ:
+        rank = int(os.environ['RANK'])
+        world_size = int(os.environ['WORLD_SIZE'])
+        local_rank = int(os.environ['LOCAL_RANK'])
+    else:
+        print('Not running in distributed mode')
+        return False, 0, 1, 0
+    
+    # Initialize process group
+    dist.init_process_group(backend='nccl')
+    
+    # Set device
+    torch.cuda.set_device(local_rank)
+    
+    return True, rank, world_size, local_rank
+
+def cleanup_distributed():
+    """Clean up distributed training."""
+    if dist.is_initialized():
+        dist.destroy_process_group()
+
+# ---------------- Config ----------------
+ESM_NAME        = "facebook/esm2_t33_650M_UR50D"
+TARGET_LAYER    = 24
+MAX_LEN         = 1024
+BATCH_SIZE_SEQ  = 8            # Reduced for multi-GPU (each GPU processes this many)
+TOKENS_PER_STEP = 4096
+TOKEN_CHUNK     = 8192
+L1_WEIGHT       = 2e-3
+LR              = 1e-3
+SEED            = 17
 
 # ---------------- Data Loading with Sharding ----------------
 class DistributedFastaDataset:
@@ -68,7 +124,9 @@ class SimpleSAE(nn.Module):
 
 def sae_loss(x, xhat, z, l1):
     recon = F.mse_loss(xhat, x)
-    spars = z.abs().mean()
+    # spars = z.abs().mean()
+    spars = z.norm(p=1, dim=-1).mean()
+
     return recon + l1 * spars, recon, spars
 
 def iter_token_chunks(hBTD, attn, chunk):

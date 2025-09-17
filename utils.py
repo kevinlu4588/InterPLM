@@ -23,6 +23,7 @@ from sklearn.metrics import roc_auc_score, precision_recall_curve, roc_curve
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
 import random
+from stream_train_sae import SimpleSAE, build_esm, esm_layer_hidden_states
 DEVICE="cuda"
 DTYPE  = torch.float16
 MAX_LEN=1024
@@ -38,6 +39,21 @@ FASTA_GZ = Path("/home/ec2-user/SageMaker/InterPLM/data/uniprot/uniprot_sprot.fa
 OUT_DIR  = Path(f"/home/ec2-user/SageMaker/InterPLM/data/esm2_hidden_states/{DATASET_NAME}")
 MAX_BATCHES=24
 
+def load_sae(checkpoint_path):
+
+    checkpoint = torch.load(checkpoint_path, map_location='cuda')
+
+    # Get config and create SAE
+    config = checkpoint['config']
+    sae = SimpleSAE(
+        d_in=config['d_hidden'],
+        n_feats=config['n_feats'],
+        tied=False
+    ).cuda()
+
+    # Load the trained weights
+    sae.load_state_dict(checkpoint['sae_state_dict'])
+    sae.eval()
 
 def write_json(path: Path, obj: dict):
     ensure_dir(path.parent)
