@@ -18,22 +18,48 @@ def example_basic():
     print("Running:", " ".join(cmd))
     subprocess.run(cmd)
 
-# Example 2: Train on multiple FASTA files with evaluation
+# # Example 2: Train on multiple FASTA files with evaluation
+# def example_multi_file():
+#     """Train on multiple FASTA shards and run evaluation."""
+#     cmd = [
+#         "python", "stream_train_sae.py",
+#         "/home/ec2-user/SageMaker/InterPLM/data/sharded_uniprot/shard_00.fasta", "/home/ec2-user/SageMaker/InterPLM/data/sharded_uniprot/shard_01.fasta",
+#         "--n-feats", "10240",  # Larger dictionary
+#         "--steps", "5000",  # Stop after 5000 steps
+#         "--checkpoint-dir", "checkpoints_large",
+#         "--checkpoint-freq", "250",
+#         "--eval",  # Run evaluation after training
+#         "--eval-samples", "200",
+#         "--save-final", "final_sae_model.pt"
+#     ]
+#     print("Running:", " ".join(cmd))
+#     subprocess.run(cmd)
+
 def example_multi_file():
-    """Train on multiple FASTA shards and run evaluation."""
+    """Train on all 8 FASTA shards with evaluation."""
+    # Generate all 8 shard paths
+    shard_paths = [
+        f"/home/ec2-user/SageMaker/InterPLM/data/sharded_uniprot/shard_{i:02d}.fasta" 
+        for i in range(8)
+    ]
+    
     cmd = [
         "python", "stream_train_sae.py",
-        "/home/ec2-user/SageMaker/InterPLM/data/sharded_uniprot/shard_00.fasta", "/home/ec2-user/SageMaker/InterPLM/data/sharded_uniprot/shard_01.fasta",
-        "--n-feats", "10240",  # Larger dictionary
-        "--steps", "5000",  # Stop after 5000 steps
+        *shard_paths,  # Unpack all 8 paths
+        "--n-feats", "10240",
+        "--steps", "5000",
         "--checkpoint-dir", "checkpoints_large",
-        "--checkpoint-freq", "250",
-        "--eval",  # Run evaluation after training
+        "--checkpoint-freq", "1000",
+        "--eval",
         "--eval-samples", "200",
         "--save-final", "final_sae_model.pt"
     ]
-    print("Running:", " ".join(cmd))
+    print(f"Running on {len(shard_paths)} FASTA files:")
+    for path in shard_paths:
+        print(f"  - {path}")
     subprocess.run(cmd)
+
+example_multi_file()
 
 # Example 3: Quick test run
 def example_test_run():

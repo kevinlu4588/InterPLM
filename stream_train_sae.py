@@ -18,7 +18,7 @@ MAX_LEN         = 1024
 BATCH_SIZE_SEQ  = 64           # increase until GPU stays busy
 TOKENS_PER_STEP = 4096         # gradient-accum token budget
 TOKEN_CHUNK     = 8192         # process tokens in chunks to cap VRAM (adjust)
-L1_WEIGHT       = 2e-3         # sparsity strength
+L1_WEIGHT       = 0.1         # sparsity strength
 LR              = 1e-3
 SEED            = 17
 DEVICE          = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -116,7 +116,7 @@ def iter_token_chunks(hBTD: torch.Tensor, attn: torch.Tensor, chunk: int) -> Ite
 def train_sae_streaming(
     fasta_paths: List[Path],
     d_hidden: int = 1280,
-    n_feats: int = 16384,
+    n_feats: int = 10240,
     steps: Optional[int] = None,     # stop after N SAE optimizer steps (optional)
     checkpoint_dir: Optional[Path] = None,
     checkpoint_freq: int = 500,
