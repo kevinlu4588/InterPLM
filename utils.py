@@ -89,8 +89,10 @@ def write_manifest(out_dir: Path, **kwargs):
 
 
 # ------------- Count sequences once (for progress/manifest) -------------
-def count_sequences(fasta_gz: Path) -> int:
-    with gzip.open(fasta_gz, "rt") as fh:
+def count_sequences(fasta_path: Path) -> int:
+    opener = gzip.open if fasta_path.suffix == ".gz" else open
+
+    with opener(fasta_path, "rt") as fh:
         return sum(1 for _ in SeqIO.parse(fh, "fasta"))
 
 # ------------- Model & extract (mostly same) -------------
@@ -100,13 +102,22 @@ def build_model_and_tokenizer(device, esm_name=ESM_NAME):
     return model, tokenizer
 
 
-def iter_swissprot_sequences(fasta_gz: Path, max_len: int = MAX_LEN):
-    with gzip.open(fasta_gz, "rt") as fh:
+def iter_fasta_sequences(fasta_path: Path, max_len: int = MAX_LEN) -> Iterable[Tuple[str, str]]:
+    """
+    Stream (header, aa_string) pairs from a FASTA file.
+    Supports both plain and gzipped (.gz) FASTA.
+    """
+    # Choose opener based on file extension
+    opener = gzip.open if fasta_path.suffix == ".gz" else open
+    with opener(fasta_path, "rt") as fh:
         for rec in SeqIO.parse(fh, "fasta"):
             seq = str(rec.seq)
             if not seq:
                 continue
-            yield rec.id, (seq if len(seq) <= max_len else seq[:max_len])
+            if len(seq) > max_len:
+                seq = seq[:max_len]
+            yield rec.id, seq
+
 def batched_sequences_from_iterator(sequences, batch_size):
     """Create batches from an iterator of sequences"""
     batch = []
@@ -119,7 +130,7 @@ def batched_sequences_from_iterator(sequences, batch_size):
         yield batch
 def batched_sequences(fasta_gz: Path, batch_size: int = BATCH_SIZE_SEQ):
     buf = []
-    for _, seq in iter_swissprot_sequences(fasta_gz):
+    for _, seq in iter_fasta_sequences(fasta_gz):
         buf.append(seq)
         if len(buf) == batch_size:
             yield buf
