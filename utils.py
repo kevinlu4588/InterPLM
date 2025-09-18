@@ -55,6 +55,8 @@ def load_sae(checkpoint_path):
     sae.load_state_dict(checkpoint['sae_state_dict'])
     sae.eval()
 
+    return sae
+
 def write_json(path: Path, obj: dict):
     ensure_dir(path.parent)
     with open(path, "w") as fh:
