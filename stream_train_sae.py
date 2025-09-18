@@ -90,6 +90,10 @@ class SimpleSAE(nn.Module):
         z = F.relu(self.encoder(x))        # [N, F]
         xhat = self.decoder(z)             # [N, D]
         return xhat, z
+    def encode(self, x):
+        return F.relu(self.encoder(x))
+    def decode(self, f):
+        return self.decoder(f)
 
 def sae_loss(x: torch.Tensor, xhat: torch.Tensor, z: torch.Tensor, l1: float) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     recon = F.mse_loss(xhat, x)           # reconstruction term
